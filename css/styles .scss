@@ -8,7 +8,11 @@
 body {
   margin: 0; // Ingen kanter i siden af browser
 
-  background-color: red;
+
+  .parent {
+    background-image: inherit;
+  }
+
 }
 
 h1, h2, h3, h4, h5, h6 {
