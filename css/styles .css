@@ -9,31 +9,35 @@ body {
   background-position: inherit;
   background-attachment: scroll;
   background-repeat: no-repeat; }
-  body .omos {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    padding: 10px;
-    margin-top: 40px; }
-  body .omosoverskrift {
-    position: relative;
-    width: auto;
-    height: 50%;
-    color: white;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px; }
-  body .omostekst {
-    position: relative;
-    width: auto;
-    height: 50%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 11px;
-    padding: 10px; }
-  body .mennesker {
-    display: none; }
+
+.omos {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  padding: 10px;
+  margin-top: 40px; }
+
+.omosoverskrift {
+  position: relative;
+  width: auto;
+  height: 50%;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px; }
+
+.omostekst {
+  position: relative;
+  width: auto;
+  height: 50%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  padding: 10px; }
+
+.mennesker {
+  display: none; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
