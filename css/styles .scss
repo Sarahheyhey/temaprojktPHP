@@ -1,3 +1,4 @@
+@charset "utf-8";
 // Alt der gælder for mobil og højere
 
 * { // Gælder alt på hele siden
@@ -5,15 +6,51 @@
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
 }
 
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.dropdown {
+  text-align: center;
+  width: 25%;
+  position: fixed;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 body {
   margin: 0; // Ingen kanter i siden af browser
-
-
-  .parent {
-    background-image: inherit;
-  }
-
 }
+
+
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
@@ -48,10 +85,17 @@ img {
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+.dropdown {       
+  display: none;  
+}
 }
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+.dropdown {
+  display: none;
+}
+
 }
 
 @media print {
