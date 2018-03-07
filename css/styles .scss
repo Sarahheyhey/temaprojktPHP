@@ -8,16 +8,79 @@
 body {
   margin: 0; // Ingen kanter i siden af browser
 
+  background-image: url("../images/Artboard_vin.jpg");
+  background-size: cover;
+  background-position: inherit;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
 
-  .parent {
-    background-image: inherit;
+
+
+
+  .omos{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    padding: 10px;
+    margin-top: 40px;
   }
 
+  .omosoverskrift{
+    position: relative;
+    width: auto;
+    height: 50%;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+
+  }
+
+
+  .omostekst{
+    position: relative;
+    width: auto;
+    height: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    padding: 10px;
+  }
+
+
+.mennesker{
+  display: none;
 }
+
+
+  $red: #952641;
+  $lightblue: #45526b;
+  $darkblue: #262d3b;
+  $white: #ffffff;
+}
+
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
+}
+
+h1{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  color: white;
+
+
+}
+
+h2{
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  color: white;
+
+
 }
 
 ul, ol {
@@ -53,6 +116,24 @@ img {
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
 }
+
+
+
+
+
+.mennesker{
+
+
+}
+
+
+
+
+
+
+
+
+
 
 @media print {
   // Alt der gælder for print specifikt
