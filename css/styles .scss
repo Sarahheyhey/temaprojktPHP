@@ -17,21 +17,78 @@ body {
   background-repeat: no-repeat;
 
 }
+.lillelogo {
+  width: auto;
+  height: 20px;
+}
 
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #952641;
+  color: white;
+}
+
+.dropdown {
+  text-align: center;
+  width: 25%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #952641;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: white;
+  color: #952641;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu_web {
+  
+}
+
+.logo{
+  height: 50%;
+  width: 50%;
+}
+
+  .content{
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+  }
 
   .omos{
     position: relative;
     width: 100%;
-    height: 100%;
-    z-index: 2;
     padding: 10px;
-    margin-top: 40px;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .omosoverskrift{
     position: relative;
     width: auto;
-    height: 50%;
     color: white;
     font-family: 'Libre Baskerville', serif;
     font-size: 30px;
@@ -50,11 +107,54 @@ body {
     padding: 10px;
   }
 
-
 .mennesker{
+  height: auto;
+  width: auto;
+  justify-content: space-between;
   display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+
 }
 
+.menneske1{
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  margin: 5px;
+}
+
+.menneske2{
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  margin: 5px;
+}
+
+.menneske3{
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  margin: 5px;
+}
+
+.forhandler{
+  height: 30%;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+ .forhandleroverskrift{
+   text-align: center;
+   width: 50%;
+
+ }
+
+ .forhandlertekst{
+   width: 50%;
+ }
 
   $red: #952641;
   $lightblue: #45526b;
@@ -62,7 +162,11 @@ body {
   $white: #ffffff;
 
 
-
+.forhandlercontain{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
@@ -109,10 +213,32 @@ img {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+}
+.omos{
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.mennesker{
+  display: flex;
+  flex-direction: row;
+}
+
+.menneske1{
+  display: block;
+}
+
+.menneske2{
+  display: block;
+}
+
+.menneske3{
+  display: block;
 }
 
 @media screen and (min-width: 1200px) {
@@ -120,19 +246,10 @@ img {
 }
 
 
-
-
-
 .mennesker{
-
+  display: flex;
 
 }
-
-
-
-
-
-
 
 
 
