@@ -6,9 +6,7 @@
 }
 
 body {
-  margin: 0; // Ingen kanter i siden af browser
-
-
+  margin: 35px; // Ingen kanter i siden af browser
 
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
@@ -17,9 +15,16 @@ body {
   background-repeat: no-repeat;
 
 }
-.lillelogo {
-  width: auto;
-  height: 20px;
+.h{
+  height: 40px;
+  width: 40px;
+  float: right;
+}
+
+.v{
+  height: 40px;
+  width: 40px;
+  float: left;
 }
 
 .dropbtn {
@@ -63,18 +68,24 @@ body {
 }
 
 .menu_web {
-  
+  display: none;
 }
 
-.logo{
-  height: 50%;
-  width: 50%;
+.lillelogo{
+ display: none;
+}
+
+.logostreg{
+  height: 63%;
+  width: 63%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
   .content{
-    justify-content: space-between;
     height: auto;
     width: 100%;
+    display: -webkit-flex;
   }
 
   .omos{
@@ -84,16 +95,18 @@ body {
     justify-content: space-between;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top: 140px;
   }
 
   .omosoverskrift{
     position: relative;
-    width: auto;
+    width: 95%;
     color: white;
     font-family: 'Libre Baskerville', serif;
     font-size: 30px;
     text-align: center;
     padding: 10px;
+    align-content: space-between;
 
   }
 
@@ -108,52 +121,59 @@ body {
   }
 
 .mennesker{
-  height: auto;
-  width: auto;
-  justify-content: space-between;
   display: none;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-
 }
 
 .menneske1{
-  height: 100%;
-  width: 33%;
+  height: auto;
+  width: 25%;
   text-align: center;
   margin: 5px;
 }
 
 .menneske2{
-  height: 100%;
-  width: 33%;
+  height: auto;
+  width: 25%;
   text-align: center;
   margin: 5px;
 }
 
 .menneske3{
-  height: 100%;
-  width: 33%;
+  height: auto;
+  width: 25%;
   text-align: center;
   margin: 5px;
 }
 
 .forhandler{
-  height: 30%;
-  width: 80%;
-  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 95px;
+
   
 }
 
  .forhandleroverskrift{
+   position: relative;
+   width: auto;
+   color: white;
+   font-family: 'Libre Baskerville', serif;
+   font-size: 30px;
    text-align: center;
-   width: 50%;
+   padding: 10px;
 
  }
 
  .forhandlertekst{
-   width: 50%;
+   position: relative;
+   width: auto;
+   height: 50%;
+   font-family: 'Nunito', sans-serif;
+   font-size: 11px;
+   padding: 10px;
+   text-align: left;
  }
 
   $red: #952641;
@@ -165,8 +185,47 @@ body {
 .forhandlercontain{
   width: 100%;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
+
+.knap{
+  background-color: #952641;
+  color: white;
+  border: #952641;
+}
+
+.gallericontain{
+  text-align: center;
+  background-color: $red;
+  height: 250px;
+  width: auto;
+  margin-top: 25px;
+}
+.kontaktcontain{
+  margin-top: 60px;
+  text-align: center;
+}
+.kontaktinfo{
+  margin-top: 20px;
+}
+
+.danmark{
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 10px;
+
+}
+
+.spanien{
+  margin-top: 10px;
+  text-align: right;
+}
+
+.logopng{
+  display: none;
+}
+
+
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
@@ -175,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-family: 'Libre Baskerville', serif;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 
 
@@ -183,9 +242,48 @@ h1{
 
 h2{
   font-family: 'Nunito', sans-serif;
-  font-size: 15px;
+  font-size: 10px;
   color: white;
 
+}
+
+p{
+  color: white;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+
+.op{
+  border-radius: 50%;
+  background-color: $red;
+  color: white;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  font-size: 20px;
+  border: none;
+  float: right;
+}
+.some{
+  background-color: $red;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: Lato;
+
+
+
+}
+
+.foooter{
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
 
 }
 
@@ -220,39 +318,192 @@ img {
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
 }
-.omos{
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-.mennesker{
-  display: flex;
-  flex-direction: row;
-}
-
-.menneske1{
-  display: block;
-}
-
-.menneske2{
-  display: block;
-}
-
-.menneske3{
-  display: block;
-}
 
 @media screen and (min-width: 1200px) {
   // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  body{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .h{
+    height: 55px;
+    width: 55px;
+    float: right;
+  }
+
+  .v{
+    height: 55px;
+    width: 55px;
+    float: left;
+  }
+
+
+  .lillelogo {
+    display: block;
+  }
+
+  .logostreg{
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+  }
+
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .content{
+    margin-top: 300px;
+
+  }
+
+  .omos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: 100px;
+    justify-content: space-between;
+
+
+  }
+
+  .mennesker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    height: auto;
+    width: 250%;
+    margin-right: -30px;
+    margin-left: 30px;
+
+
+  }
+
+  .menneske1{
+    height: auto;
+
+  }
+
+  .menneske2{
+    height: auto;
+
+
+  }
+  .menneske3{
+       height: auto;
+
+  }
+
+
+  .menneske1 {
+    display: block;
+  }
+
+  .menneske2 {
+    display: block;
+  }
+
+  .menneske3 {
+    display: block;
+  }
+
+  .forhandleroverskrift{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .forhandler{
+    margin-top: 350px;
+  }
+
+  .forhandlertekst{
+    width: 33%;
+    margin:  0 auto;
+    margin-top: 5px;
+  }
+
+  .gallericontain{
+    margin-top: 400px;
+    height: 500px;
+  }
+
+
+  .knap{
+    padding: 8px;
+    margin-top: 30px;
+
+  }
+
+  .op{
+    display: none;
+  }
+
+  .kontaktinfo{
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+
+  .danmark{
+
+  }
+
+  .spanien{
+
+  }
+
+
+
+  h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: white;
+
+
+  }
+
+  h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color: white;
+
+  }
+
+  p{
+    color: white;
+    font-size: 11px;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .logopng{
+    display: block;
+
+  }
+
+  .some{
+    display: none;
+  }
+
 }
-
-
-.mennesker{
-  display: flex;
-
-}
-
-
-
 
 @media print {
   // Alt der gælder for print specifikt
