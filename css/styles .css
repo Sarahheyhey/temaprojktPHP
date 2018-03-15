@@ -180,6 +180,37 @@ body {
 .logopng {
   display: none; }
 
+.gallericontain2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px; }
+
+#slideshow {
+  margin-top: 20px;
+  height: 500px;
+  background-color: lawngreen; }
+
+#slideshow img {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 700px;
+  transform: translate(-50%); }
+
+.active {
+  z-index: 9; }
+
+.prev, .next {
+  cursor: pointer;
+  text-align: center; }
+
+.text {
+  background-color: red;
+  text-align: center;
+  z-index: 2000;
+  color: white;
+  font-family: 'Nunito', sans-serif; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
@@ -333,6 +364,11 @@ img {
   .gallericontain {
     margin-top: 400px;
     height: 500px; }
+
+  .gallericontain2 {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px; }
 
   .knap {
     padding: 8px;
