@@ -198,23 +198,22 @@
 
 <script type="text/javascript">
 
-    $(document).ready(function(e) {
+    var btn = $('.op');
 
-        var document = $(document), fadeElement = $('.v, .h');
-        document.on('scroll', function (e){
+    $('window').scroll(function () {
+        if ($(window) 
 
-            var currScrollPos = document.scrollTop();
-            fadeElement.forEach(function (e) {
+    })
 
-                var $this = ('.v, .h'), elementOffSetTop = $this.offSet.top();
-                    if (currScrollPos > elementOffSetTop) $this.css('opacity', 0 -(currScrollPos-elementOffSetTop)/400)
-            });
-        });
-    });
 
 
 
 </script>
+
+
+
+
+
 
 </body>
 

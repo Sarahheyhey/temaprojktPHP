@@ -364,7 +364,7 @@ img {
     margin-top: 20px; }
 
   .op {
-    display: none; }
+    display: block; }
 
   .kontaktinfo {
     justify-content: space-between;
