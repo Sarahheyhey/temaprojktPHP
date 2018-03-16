@@ -10,15 +10,22 @@ body {
   background-attachment: scroll;
   background-repeat: no-repeat; }
 
+.omosknap {
+  background-color: #952641;
+  color: white;
+  border: #952641; }
+
 .h {
   height: 40px;
   width: 40px;
-  float: right; }
+  float: right;
+  opacity: 1; }
 
 .v {
   height: 40px;
   width: 40px;
-  float: left; }
+  float: left;
+  opacity: 1; }
 
 .dropbtn {
   font-size: 16px;
@@ -161,6 +168,11 @@ body {
   width: auto;
   margin-top: 25px; }
 
+.galleriknap {
+  background-color: #952641;
+  color: white;
+  border: #952641; }
+
 .kontaktcontain {
   margin-top: 60px;
   text-align: center; }
@@ -290,6 +302,10 @@ img {
     margin-top: 100px;
     justify-content: space-between; }
 
+  .omosoverskrift {
+    width: 90%;
+    margin: 0 auto; }
+
   .mennesker {
     display: flex;
     flex-direction: row;
@@ -319,7 +335,7 @@ img {
     display: block; }
 
   .forhandleroverskrift {
-    width: 50%;
+    width: 40%;
     margin: 0 auto; }
 
   .forhandler {
@@ -334,9 +350,18 @@ img {
     margin-top: 400px;
     height: 500px; }
 
+  .gallerioverskrift {
+    width: 30%;
+    margin: 0 auto; }
+
   .knap {
     padding: 8px;
     margin-top: 30px; }
+
+  .kontaktcontain {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px; }
 
   .op {
     display: none; }
