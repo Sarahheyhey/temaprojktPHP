@@ -1,4 +1,3 @@
-<!doctype html>
 <!-- Fortæller det er html5 -->
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
 <html lang="da">
@@ -10,7 +9,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Galleri - Dominio de Pontas</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -18,38 +17,119 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles%20.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:title" content="titel">
+    <script src="https://use.fontawesome.com/59fbb91632.js"></script>
 
-    <meta property="og:type" content="website">
 
-    <meta property="og:url" content="http://www.domain.dk">
-
-    <meta property="og:image" content="https://www.domain.dk/img.jpg">
-
-    <meta property="og:description" content="Beskrivelse">
-
-    <meta property="og:locale" content="da_DK">
+    <meta property="og:title" content="titel"/>
+     
+    <meta property="og:type" content="website"/>
+     
+    <meta property="og:url" content="http://www.domain.dk"/>
+     
+    <meta property="og:image" content="https://www.domain.dk/img.jpg"/>
+     
+    <meta property="og:description" content="Beskrivelse"/>
+     
+    <meta property="og:locale" content="da_DK"/>
 
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
-<body>
+<body bgcolor="#262d3b">
+
+<div class="header">
+    <a href="index.html"><img class="lillelogo" src="images/lillelogo.png"></a>
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
+        <div class="dropdown-content">
+            <a href="index.html">HJEM</a>
+            <a href="trads.html">OM OS</a>
+            <a href="schram.html">FORHANDLERE</a>
+            <a href="galleri.html">GALLERI</a>
+            <a href="contact.html">KONTAKT</a>
+        </div>
+    </div>
+    <div class="menu_web">
+        <a class="front_link" href="index.html">HJEM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="trads_link" href="trads.html">OM OS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="schram_link" href="schram.html">FORHANDLERE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact_link" href="contact.html">KONTAKT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+</div>
+
+<div class="gallericontain2">
+    <div class="galleri2">
+
+        <div class="gallerioverskrift2">
+            <div class="h"><img src="images/hvidkrummelurehøjre.png">
+            </div>
+            <div class="v"><img src="images/krummelurevenstre.png"></div>
+            <h1>GALLERI</h1>
+
+        </div>
+    </div>
+</div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-</script>
+<div id="slideshow">
+    <img src="images/Forside.jpeg" id="first" class="active" />
+    <img src="images/Galleri1.jpg"/>
+    <img src="images/Galleri3.jpeg" id="last"/>
 
+
+</div>
+
+<div class="text">
+    <span class="prev">Forrige</span> | <span class="next">Næste</span>
+</div>
+
+
+<div class="forhandlertekst">
+    <br>Vores vin er nem at finde og vi er sikker på at den findes i en
+    udvalgt butik nær dig. Her ses en liste over vores forhandlere i hele landet.
+    Vi tager forbehold for at varen enten ikke er på lager eller er udsolgt i din lokale forhandlere.
+    Du kan ligeledes se på kortet og få et hurtigt overblik.
+    Vores hovedforhandlere er Kvickly, Irma og Super-Brugsen.
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function (e) {
-        // Din kode her
+        $(".prev").click(function (e) {
+            var active = $("#slideshow").find(".active");
+
+            if(active.attr("id") == 'first') {
+                active.removeClass("active")
+                $("last").addClass("active");
+            } else {
+                active.removeClass("active")
+                active.prev("img").addClass("active");
+            }
+
+        });
+
+        $(".next").click(function (e) {
+            var active = $("#slideshow").find(".active");
+
+            if(active.attr("id") == 'last') {
+                active.removeClass("active")
+                $("#first").addClass("active");
+            } else {
+                active.removeClass("active")
+                active.next("img").addClass("active");
+            }
+
+        });
+
     });
 </script>
-
+ 
 </body>
 </html>
