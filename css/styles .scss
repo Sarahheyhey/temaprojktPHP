@@ -33,6 +33,7 @@ body {
   cursor: pointer;
   background-color: #952641;
   color: white;
+  z-index: 200;
 }
 
 .dropdown {
@@ -40,6 +41,7 @@ body {
   width: 25%;
   position: relative;
   display: inline-block;
+  z-index:200;
 }
 
 .dropdown-content {
@@ -49,6 +51,7 @@ body {
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
+  font-family: 'Nunito', sans-serif;
 }
 
 .dropdown-content a {
