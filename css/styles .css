@@ -25,15 +25,13 @@ body {
   border: none;
   cursor: pointer;
   background-color: #952641;
-  color: white;
-  z-index: 200; }
+  color: white; }
 
 .dropdown {
   text-align: center;
   width: 25%;
   position: relative;
-  display: inline-block;
-  z-index: 200; }
+  display: inline-block; }
 
 .dropdown-content {
   display: none;
@@ -41,8 +39,7 @@ body {
   background-color: #952641;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  font-family: 'Nunito', sans-serif; }
+  z-index: 1; }
 
 .dropdown-content a {
   color: white;
@@ -145,8 +142,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 11px;
   padding: 10px;
-  text-align: left;
-  color: white; }
+  text-align: left; }
 
 .forhandlercontain {
   width: 100%;
@@ -183,37 +179,6 @@ body {
 
 .logopng {
   display: none; }
-
-.gallericontain2 {
-  width: 100%;
-  text-align: center;
-  margin-top: 100px; }
-
-#slideshow {
-  margin-top: 20px;
-  height: 500px;
-  background-color: lawngreen; }
-
-#slideshow img {
-  position: absolute;
-  left: 50%;
-  display: block;
-  width: 700px;
-  transform: translate(-50%); }
-
-.active {
-  z-index: 9; }
-
-.prev, .next {
-  cursor: pointer;
-  text-align: center; }
-
-.text {
-  background-color: red;
-  text-align: center;
-  z-index: 2000;
-  color: white;
-  font-family: 'Nunito', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -368,11 +333,6 @@ img {
   .gallericontain {
     margin-top: 400px;
     height: 500px; }
-
-  .gallericontain2 {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 100px; }
 
   .knap {
     padding: 8px;
