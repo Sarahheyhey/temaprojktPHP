@@ -82,8 +82,7 @@
 
 
             <div class="omosoverskrift">
-                <div class="h"><img src="images/hvidkrummelurehøjre.png">
-                </div>
+                <div class="h"><img src="images/hvidkrummelurehøjre.png"></div>
                 <div class="v"><img src="images/krummelurevenstre.png"></div>
                     <h1>OM OS</h1>
 
@@ -122,12 +121,14 @@
 
 </div>
 
+<button class="omosknap"><h2>Læs mere om os</h2></button>
+
+
 <div class="forhandlercontain">
 <div class="forhandler">
 
     <div class="forhandleroverskrift">
-        <div class="h"><img src="images/hvidkrummelurehøjre.png">
-        </div>
+        <div class="h"><img src="images/hvidkrummelurehøjre.png"></div>
         <div class="v"><img src="images/krummelurevenstre.png"></div>
             <h1>FORHANDLERE</h1>
 
@@ -141,15 +142,20 @@
 </div>
 
 <div class="gallericontain">
-    <div class="h"><img src="images/hvidkrummelurehøjre.png">
-    </div>
+
+    <div class="gallerioverskrift">
+    <div class="h"><img src="images/hvidkrummelurehøjre.png"></div>
     <div class="v"><img src="images/krummelurevenstre.png"></div>
     <h1>GALLERI</h1>
+    </div>
+
+</div>
+<button class="galleriknap"><h2>Se flere billeder</h2></button>
 </div>
 
+
     <div class="kontaktcontain">
-        <div class="h"><img src="images/hvidkrummelurehøjre.png">
-        </div>
+        <div class="h"><img src="images/hvidkrummelurehøjre.png"></div>
         <div class="v"><img src="images/krummelurevenstre.png"></div>
         <h1>KONTAKT</h1>
     </div>
@@ -191,11 +197,29 @@
 </script>
 
 <script type="text/javascript">
+
     $(document).ready(function(e) {
-    // Din kode her
+
+        var document = $(document), fadeElement = $('.v, .h');
+        document.on('scroll', function (e){
+
+            var currScrollPos = document.scrollTop();
+            fadeElement.forEach(function (e) {
+
+                var $this = ('.v, .h'), elementOffSetTop = $this.offSet.top();
+                    if (currScrollPos > elementOffSetTop) $this.css('opacity', 0 -(currScrollPos-elementOffSetTop)/400)
+            });
+        });
     });
+
+
+
 </script>
 
 </body>
 
-</html>
+
+
+
+
+
