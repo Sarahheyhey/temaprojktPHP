@@ -145,7 +145,8 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 11px;
   padding: 10px;
-  text-align: left; }
+  text-align: left;
+  color: white; }
 
 .forhandlercontain {
   width: 100%;
