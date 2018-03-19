@@ -23,7 +23,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://use.fontawesome.com/59fbb91632.js"></script>
+    <link rel="stylesheet" href="styles%20.css" type="text/css" />
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>  <script src="nivoslider/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 
     <meta property="og:title" content="titel"/>
      
@@ -41,7 +43,6 @@
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
-<body bgcolor="#262d3b">
 
 <div class="header">
     <a href="index.html"><img class="lillelogo" src="images/lillelogo.png"></a>
@@ -49,16 +50,16 @@
         <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
         <div class="dropdown-content">
             <a href="index.html">HJEM</a>
-            <a href="trads.html">OM OS</a>
-            <a href="schram.html">FORHANDLERE</a>
+            <a href="omos.html">OM OS</a>
+            <a href="forhandler.html">FORHANDLERE</a>
             <a href="galleri.html">GALLERI</a>
             <a href="contact.html">KONTAKT</a>
         </div>
     </div>
     <div class="menu_web">
         <a class="front_link" href="index.html">HJEM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="trads_link" href="trads.html">OM OS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="schram_link" href="schram.html">FORHANDLERE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="trads_link" href="omos.html">OM OS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="schram_link" href="forhandler.html">FORHANDLERE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="contact_link" href="contact.html">KONTAKT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
@@ -66,30 +67,24 @@
 
 <div class="gallericontain2">
     <div class="galleri2">
-
         <div class="gallerioverskrift2">
             <div class="h"><img src="images/hvidkrummelurehøjre.png">
             </div>
             <div class="v"><img src="images/krummelurevenstre.png"></div>
             <h1>GALLERI</h1>
-
         </div>
     </div>
 </div>
 
+<br>
+<br>
 
-<div id="slideshow">
-    <img src="images/Forside.jpeg" id="first" class="active" />
-    <img src="images/Galleri1.jpg"/>
-    <img src="images/Galleri3.jpeg" id="last"/>
-
-
+<div id="slider" class="nivoSlider">
+    <img src="images/Galleri1.jpg" alt="" />
+    <img src="images/billede1tilgalleri.png" alt="" title="#htmlcaption" /></a>
+    <img src="images/Galleri3.jpeg" alt="" title="This is an example of a caption" />
+    <img src="images/Forside.jpeg" alt="" />
 </div>
-
-<div class="text">
-    <span class="prev">Forrige</span> | <span class="next">Næste</span>
-</div>
-
 
 <div class="forhandlertekst">
     <br>Vores vin er nem at finde og vi er sikker på at den findes i en
@@ -99,35 +94,11 @@
     Vores hovedforhandlere er Kvickly, Irma og Super-Brugsen.
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="../jquery.nivo.slider.js"></script>
 <script type="text/javascript">
-    $(document).ready(function (e) {
-        $(".prev").click(function (e) {
-            var active = $("#slideshow").find(".active");
-
-            if(active.attr("id") == 'first') {
-                active.removeClass("active")
-                $("last").addClass("active");
-            } else {
-                active.removeClass("active")
-                active.prev("img").addClass("active");
-            }
-
-        });
-
-        $(".next").click(function (e) {
-            var active = $("#slideshow").find(".active");
-
-            if(active.attr("id") == 'last') {
-                active.removeClass("active")
-                $("#first").addClass("active");
-            } else {
-                active.removeClass("active")
-                active.next("img").addClass("active");
-            }
-
-        });
-
+    $(window).load(function() {
+        $('#slider').nivoSlider();
     });
 </script>
  
