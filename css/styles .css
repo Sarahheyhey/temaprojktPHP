@@ -285,7 +285,6 @@ p {
   border: none;
   font-family: "Nunito", sans-serif; }
 
-
 .foooter {
   height: auto;
   width: 100%;
@@ -532,7 +531,6 @@ aside, nav, article, figure {
     margin-top: 300px;
     height: 500px; }
 
-
   .gallerioverskrift {
     width: 50%;
     margin: 0 auto; }
@@ -552,7 +550,6 @@ aside, nav, article, figure {
     width: 50%;
     margin: 0 auto;
     margin-top: 100px; }
-
 
   .knap {
     padding: 8px;
@@ -591,9 +588,6 @@ aside, nav, article, figure {
     height: 50%;
     width: 50%;
     margin-left: auto;
-    margin-right: auto; }
-
-  .some {
-    display: none; } }
+    margin-right: auto; } }
 
 /*# sourceMappingURL=styles%20.css.map */
