@@ -48,6 +48,7 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
+
 <div class="header">
     <a href="index.html"><img class="lillelogo" src="images/lillelogo.png"></a>
     <div class="dropdown">
@@ -144,9 +145,6 @@
 <div class="gallericontain">
 
     <div class="gallerioverskrift">
-    <div class="h"><img src="images/hvidkrummelurehøjre.png"></div>
-    <div class="v"><img src="images/krummelurevenstre.png"></div>
-    <h1>GALLERI</h1>
     </div>
 
 </div>
@@ -187,21 +185,36 @@
          f
      </button>
 
-     <button class="op">
-         ^
-     </button>
  </div>
 
 
+
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 </script>
 
 <script type="text/javascript">
 
-      $('.op').click(function (e) {
-          $(window).scrollTop(0)
-      })
+
+      // ===== Scroll to Top ====
+      $(window).scroll(function() {
+          if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+              $('#return-to-top').fadeIn(200);    // Fade in the arrow
+          } else {
+              $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+          }
+      });
+      $('#return-to-top').click(function() {      // When arrow is clicked
+          $('body,html').animate({
+              scrollTop : 0                       // Scroll to top of body
+          }, 500);
+      });
 
 
 </script>
