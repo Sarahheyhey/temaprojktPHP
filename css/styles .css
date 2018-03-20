@@ -339,7 +339,7 @@ img {
     margin-top: 30px; }
 
   .op {
-    display: none; }
+    display: block; }
 
   .kontaktinfo {
     justify-content: space-between;
