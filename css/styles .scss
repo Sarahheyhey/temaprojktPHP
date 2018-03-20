@@ -1,4 +1,4 @@
-// Alt der gælder for mobil og højere
+@charset "utf-8"; // Alt der gælder for mobil og højere
 
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
@@ -6,15 +6,19 @@
 }
 
 body {
-  margin: 35px; // Ingen kanter i siden af browser
-
+  margin: 20px; // Ingen kanter i siden af browser
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
   background-position: inherit;
   background-attachment: scroll;
   background-repeat: no-repeat;
-
+  color: white;
 }
+
+a:hover{
+  color: #952641;
+}
+
 .h{
   height: 40px;
   width: 40px;
@@ -33,6 +37,7 @@ body {
   cursor: pointer;
   background-color: #952641;
   color: white;
+  z-index: 200;
 }
 
 .dropdown {
@@ -40,6 +45,7 @@ body {
   width: 25%;
   position: relative;
   display: inline-block;
+  z-index:200;
 }
 
 .dropdown-content {
@@ -49,6 +55,7 @@ body {
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
+  font-family: 'Nunito', sans-serif;
 }
 
 .dropdown-content a {
@@ -72,7 +79,7 @@ body {
 }
 
 .lillelogo{
- display: none;
+  display: none;
 }
 
 .logostreg{
@@ -82,43 +89,42 @@ body {
   margin-top: 10px;
 }
 
-  .content{
-    height: auto;
-    width: 100%;
-    display: -webkit-flex;
-  }
+.content{
+  height: auto;
+  width: 100%;
+  display: -webkit-flex;
+}
 
-  .omos{
-    position: relative;
-    width: 100%;
-    padding: 10px;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 140px;
-  }
+.omos{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 140px;
+}
 
-  .omosoverskrift{
-    position: relative;
-    width: 95%;
-    color: white;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-    align-content: space-between;
+.omosoverskrift{
+  position: relative;
+  width: 95%;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+  align-content: space-between;
+}
 
-  }
 
-
-  .omostekst{
-    position: relative;
-    width: auto;
-    height: 50%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 11px;
-    padding: 10px;
-  }
+.omostekst{
+  position: relative;
+  width: auto;
+  height: 50%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  padding: 10px;
+}
 
 .mennesker{
   display: none;
@@ -150,36 +156,37 @@ body {
   width: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 95px;
+  margin-top: 80px;
 
-  
+
 }
 
- .forhandleroverskrift{
-   position: relative;
-   width: auto;
-   color: white;
-   font-family: 'Libre Baskerville', serif;
-   font-size: 30px;
-   text-align: center;
-   padding: 10px;
+.forhandleroverskrift{
+  position: relative;
+  width: auto;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
 
- }
+}
 
- .forhandlertekst{
-   position: relative;
-   width: auto;
-   height: 50%;
-   font-family: 'Nunito', sans-serif;
-   font-size: 11px;
-   padding: 10px;
-   text-align: left;
- }
+.forhandlertekst{
+  position: relative;
+  width: auto;
+  height: 50%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
 
-  $red: #952641;
-  $lightblue: #45526b;
-  $darkblue: #262d3b;
-  $white: #ffffff;
+$red: #952641;
+$lightblue: #45526b;
+$darkblue: #262d3b;
+$white: #ffffff;
 
 
 .forhandlercontain{
@@ -202,7 +209,7 @@ body {
   margin-top: 25px;
 }
 .kontaktcontain{
-  margin-top: 60px;
+  margin-top: 100px;
   text-align: center;
 }
 .kontaktinfo{
@@ -225,7 +232,11 @@ body {
   display: none;
 }
 
-
+.gallericontain2{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
@@ -234,24 +245,20 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
-
-
 }
 
 h2{
   font-family: 'Nunito', sans-serif;
-  font-size: 10px;
+  font-size: 17px;
   color: white;
-
 }
 
 p{
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif;
-
 }
 
 
@@ -266,6 +273,7 @@ p{
   border: none;
   float: right;
 }
+
 .some{
   background-color: $red;
   height: 30px;
@@ -274,10 +282,7 @@ p{
   color: white;
   font-size: 20px;
   border: none;
-  font-family: Lato;
-
-
-
+  font-family: 'Nunito', sans-serif
 }
 
 .foooter{
@@ -309,10 +314,145 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+//Start nivoslider
+
+table {
+  border-collapse:separate;
+  border-spacing:0;
+}
+caption, th, td {
+  text-align:left;
+  font-weight:normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:"";
+}
+blockquote, q {
+  quotes:"" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+  display: block;
+}
+
+.slider-wrapper {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.clear {
+  clear:both;
+}
+
+.nivoSlider {
+  position:relative;
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.nivoSlider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  max-width: none;
+}
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border:0;
+  padding:0;
+  margin:0;
+  z-index:6;
+  display:none;
+  filter:alpha(opacity=0);
+  opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display:block;
+  position:absolute;
+  z-index:5;
+  height:100%;
+  top:0;
+}
+.nivo-box {
+  display:block;
+  position:absolute;
+  z-index:5;
+  overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  background:#000;
+  color:#fff;
+  width:100%;
+  z-index:8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter:alpha(opacity=8);
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+.nivo-caption p {
+  padding:5px;
+  margin:0;
+}
+.nivo-caption a {
+  display:inline !important;
+}
+.nivo-html-caption {
+  display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position:absolute;
+  top:45%;
+  z-index:9;
+  cursor:pointer;
+}
+.nivo-prevNav {
+  left:0px;
+}
+.nivo-nextNav {
+  right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+  text-align:center;
+  padding: 15px 0;
+}
+.nivo-controlNav a {
+  cursor:pointer;
+}
+.nivo-controlNav a.active {
+  font-weight:bold;
+}
+
+// Slut nivoslider
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
-
-
 }
 
 @media screen and (min-width: 992px) {
@@ -356,7 +496,7 @@ img {
 
   .menu_web {
     display: block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif
 
   }
 
@@ -369,6 +509,7 @@ img {
     text-decoration: none;
     font-size: 15px;
   }
+
 
   .content{
     margin-top: 300px;
@@ -409,7 +550,7 @@ img {
 
   }
   .menneske3{
-       height: auto;
+    height: auto;
 
   }
 
@@ -442,15 +583,19 @@ img {
   }
 
   .gallericontain{
-    margin-top: 400px;
+    margin-top: 300px;
     height: 500px;
   }
 
+  .gallericontain2{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
 
   .knap{
     padding: 8px;
     margin-top: 30px;
-
   }
 
   .op{
@@ -459,7 +604,7 @@ img {
 
   .kontaktinfo{
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 100px;
   }
 
   .danmark{
@@ -482,21 +627,24 @@ img {
 
   h2{
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     color: white;
 
   }
 
   p{
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif;
 
   }
 
   .logopng{
     display: block;
-
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .some{
