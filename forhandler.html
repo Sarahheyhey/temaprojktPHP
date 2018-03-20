@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title>Sigende titel</title>
+    <title>Forhandlere - Dominio de Pontas</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -18,7 +18,7 @@
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles%20.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,14 +41,76 @@
 <!-- i <body> har man alt indhold på siden -->
 <body>
 
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="header">
+    <a href="index.html"><img class="lillelogo" src="images/lillelogo.png"></a>
+    <div class="dropdown">
+        <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
+        <div class="dropdown-content">
+            <a href="index.html">HJEM</a>
+            <a href="omos.html">OM OS</a>
+            <a href="forhandler.html">FORHANDLERE</a>
+            <a href="galleri.html">GALLERI</a>
+            <a href="contact.html">KONTAKT</a>
+        </div>
+    </div>
+    <div class="menu_web">
+        <a class="front_link" href="index.html">HJEM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="trads_link" href="omos.html">OM OS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="schram_link" href="forhandler.html">FORHANDLERE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact_link" href="contact.html">KONTAKT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+</div>
 
-<script src="js/jquery.storelocator.js"></script>
+<div class="forhandlercontain">
+
+    <div class="forhandleroverskrift">
+
+        <div class="h"><img src="images/hvidkrummelurehøjre.png"></div>
+        <div class="v"><img src="images/krummelurevenstre.png"></div>
+        <h1>FORHANDLERE</h1>
+
+       <br> <button class="læsmere">
+           <h2>Se kort over forhandler</h2>
+        </button>
+    </div>
+    <div class="forhandlertekst">
+       <br><br><br> <h2>Vores vin er nem at finde og vi er sikker på at den findes i en udvalgt butik nær dig. Her ses en liste over vores forhandlere i hele landet. Vi tager forbehold for at varen enten ikke er på lager eller er udsolgt i din lokale forhandlere. Du kan ligeledes se på kortet og få et hurtigt overblik. Vores hovedforhandlere er Kvickly, Irma og Super-Brugsen.</h2>
+    </div>
+</div>
 
 
-<script type="text/javascript">
+<div class="kontaktinfo">
+
+    <br><div class="danmark>">
+    <h2>DANMARK</h2>
+    <p>Tlf: +45 43 21 98 67<br>
+        Mail: domino@pontas.dk<br>
+        Adresse: Willemosegade 35,<br>
+        2100 kbh</p>
+</div>
+    <div class="spanien">
+        <h2>SPANIEN</h2>
+        <P>
+            Tlf: +34 848 42 88 20<br>
+            Mail: domino@pontas.es<br>
+            Adresse: Navarrería 39, 2ª planta<br>
+            31001 Pamplona</P>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+
+    <script type="text/javascript">
     $(document).ready(function (e) {
         // Din kode her
+
+      $('.læsmere').on('click', function () {
+
+           alert("google maps åbnes i ny fane");
+     })
+
     });
 </script>
 

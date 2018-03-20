@@ -15,6 +15,62 @@ body {
   background-repeat: no-repeat;
 
 }
+
+img{
+
+}
+.læsmeretekst{
+  width: auto;
+  height: auto;
+  
+}
+.allemennesker{
+  margin-top: 130px;
+}
+
+.element1{
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+
+}
+.element2{
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.element3{
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.læsmere{
+  background-color: #952641;
+  border: #952641;
+  margin-top: auto;
+  width: auto;
+  height: auto;
+  
+}
+
+
+.omosknap{
+  background-color: #952641;
+  border: #952641;
+  display: none;
+}
+.galleriknap{
+  background-color: #952641;
+  border: #952641;
+  display: none;
+
+}
 .h{
   height: 40px;
   width: 40px;
@@ -111,6 +167,7 @@ body {
   }
 
 
+
   .omostekst{
     position: relative;
     width: auto;
@@ -201,10 +258,17 @@ body {
   width: auto;
   margin-top: 25px;
 }
+
+.omsosknap{
+  background-color: $red;
+}
+
 .kontaktcontain{
   margin-top: 60px;
   text-align: center;
 }
+
+
 .kontaktinfo{
   margin-top: 20px;
 }
@@ -275,6 +339,7 @@ p{
   font-size: 20px;
   border: none;
   font-family: Lato;
+  display: none;
 
 
 
@@ -445,11 +510,30 @@ img {
     margin-top: 400px;
     height: 500px;
   }
+.gallerioverskrift{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.galleriknap{
+  background-color: $red;
+  border: $red;
+  margin:0 auto;
+  display: none;
+}
+
+  .omosknap{
+    background-color: $red;
+    border: $red;
+    margin: 0 auto;
+  }
+
 
 
   .knap{
     padding: 8px;
     margin-top: 30px;
+    background-color: $red;
 
   }
 
@@ -462,15 +546,11 @@ img {
     margin-top: 75px;
   }
 
-  .danmark{
-
-  }
-
-  .spanien{
-
-  }
-
-
+.kontaktcontain{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
 
   h1{
     font-family: 'Libre Baskerville', serif;

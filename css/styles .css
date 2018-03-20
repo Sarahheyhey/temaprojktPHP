@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -9,6 +10,48 @@ body {
   background-position: inherit;
   background-attachment: scroll;
   background-repeat: no-repeat; }
+
+.læsmeretekst {
+  width: auto;
+  height: auto; }
+
+.allemennesker {
+  margin-top: 130px; }
+
+.element1 {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row; }
+
+.element2 {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row; }
+
+.element3 {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: row; }
+
+.læsmere {
+  background-color: #952641;
+  border: #952641;
+  margin-top: auto;
+  width: auto;
+  height: auto; }
+
+.omosknap {
+  background-color: #952641;
+  border: #952641;
+  display: none; }
+
+.galleriknap {
+  background-color: #952641;
+  border: #952641;
+  display: none; }
 
 .h {
   height: 40px;
@@ -161,6 +204,9 @@ body {
   width: auto;
   margin-top: 25px; }
 
+.omsosknap {
+  background-color: #952641; }
+
 .kontaktcontain {
   margin-top: 60px;
   text-align: center; }
@@ -218,7 +264,8 @@ p {
   color: white;
   font-size: 20px;
   border: none;
-  font-family: Lato; }
+  font-family: Lato;
+  display: none; }
 
 .foooter {
   height: auto;
@@ -334,9 +381,25 @@ img {
     margin-top: 400px;
     height: 500px; }
 
+  .gallerioverskrift {
+    width: 50%;
+    margin: 0 auto; }
+
+  .galleriknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto;
+    display: none; }
+
+  .omosknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto; }
+
   .knap {
     padding: 8px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    background-color: #952641; }
 
   .op {
     display: block; }
@@ -344,6 +407,11 @@ img {
   .kontaktinfo {
     justify-content: space-between;
     margin-top: 75px; }
+
+  .kontaktcontain {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px; }
 
   h1 {
     font-family: 'Libre Baskerville', serif;
