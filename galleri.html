@@ -83,7 +83,7 @@
 
 <div id="slider" class="nivoSlider">
     <img src="images/Galleri1.jpg" alt="" />
-    <img src="images/Galleri3.jpeg" alt="" title="This is an example of a caption" />
+    <img src="images/Galleri3.jpeg" alt="" title="Hos Dominio de Pontas bruger vi kun druer af højeste kvalitet!" />
     <img src="images/Forside.jpeg" alt="" />
 </div>
 
@@ -94,13 +94,36 @@
     her efter mases de så al saften udvindes og lagres på egetræstønder i minimum 36 måneder.
 </p></div>
 
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
 <script type="text/javascript" src="nivoslider/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="nivoslider/jquery.nivo.slider.js"></script>
 <script type="text/javascript">
-    $(window).load(function() {
+    $(window).on ("load scroll", function(e) {
         $('#slider').nivoSlider();
-        $("#forhandlertekst").fadeIn(600);
+
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
     });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+
+    $(document).ready(function (e) {
+        $('div.gallerioverskrift2').fadeIn(4000).removeClass('gallerioverskrift2');
+    });
+
+
 
 </script>
  
