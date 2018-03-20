@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 20px !important; // Ingen kanter i siden af browser
+  margin: 20px; // Ingen kanter i siden af browser
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
   background-position: inherit;
@@ -156,7 +156,7 @@ a:hover{
   width: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 95px;
+  margin-top: 80px;
 
 
 }
@@ -209,7 +209,7 @@ $white: #ffffff;
   margin-top: 25px;
 }
 .kontaktcontain{
-  margin-top: 60px;
+  margin-top: 100px;
   text-align: center;
 }
 .kontaktinfo{
@@ -245,19 +245,19 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
+  font-size: 20px;
   color: white;
 }
 
 h2{
   font-family: 'Nunito', sans-serif;
-  font-size: 10px;
+  font-size: 17px;
   color: white;
 }
 
 p{
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -282,7 +282,7 @@ p{
   color: white;
   font-size: 20px;
   border: none;
-  font-family: Lato;
+  font-family: 'Nunito', sans-serif
 }
 
 .foooter{
@@ -496,7 +496,7 @@ aside, nav, article, figure {
 
   .menu_web {
     display: block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif
 
   }
 
@@ -583,7 +583,7 @@ aside, nav, article, figure {
   }
 
   .gallericontain{
-    margin-top: 400px;
+    margin-top: 300px;
     height: 500px;
   }
 
@@ -604,7 +604,7 @@ aside, nav, article, figure {
 
   .kontaktinfo{
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 100px;
   }
 
   .danmark{
@@ -627,21 +627,24 @@ aside, nav, article, figure {
 
   h2{
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     color: white;
 
   }
 
   p{
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif;
 
   }
 
   .logopng{
     display: block;
-
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .some{
