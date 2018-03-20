@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -13,6 +14,54 @@ body {
 
 a:hover {
   color: #952641; }
+
+.læsmeretekst {
+  width: auto;
+  height: auto; }
+
+.allemennesker {
+  margin-top: 130px; }
+
+.element1 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center; }
+
+.element2 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center; }
+
+.element3 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center; }
+
+.læsmere {
+  background-color: #952641;
+  border: #952641;
+  margin-top: auto;
+  width: auto;
+  height: auto; }
+
+.billede1 {
+  clear: right; }
+
+.omosknap {
+  background-color: #952641;
+  border: #952641;
+  display: none; }
+
+.galleriknap {
+  background-color: #952641;
+  border: #952641;
+  display: none; }
 
 .h {
   height: 40px;
@@ -169,6 +218,9 @@ a:hover {
   width: auto;
   margin-top: 25px; }
 
+.omsosknap {
+  background-color: #952641; }
+
 .kontaktcontain {
   margin-top: 100px;
   text-align: center; }
@@ -232,6 +284,7 @@ p {
   font-size: 20px;
   border: none;
   font-family: "Nunito", sans-serif; }
+
 
 .foooter {
   height: auto;
@@ -479,14 +532,32 @@ aside, nav, article, figure {
     margin-top: 300px;
     height: 500px; }
 
+
+  .gallerioverskrift {
+    width: 50%;
+    margin: 0 auto; }
+
+  .galleriknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto;
+    display: none; }
+
+  .omosknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto; }
+
   .gallericontain2 {
     width: 50%;
     margin: 0 auto;
     margin-top: 100px; }
 
+
   .knap {
     padding: 8px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    background-color: #952641; }
 
   .op {
     display: block; }
@@ -494,6 +565,11 @@ aside, nav, article, figure {
   .kontaktinfo {
     justify-content: space-between;
     margin-top: 100px; }
+
+  .kontaktcontain {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px; }
 
   h1 {
     font-family: 'Libre Baskerville', serif;
