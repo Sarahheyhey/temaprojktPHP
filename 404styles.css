@@ -1,0 +1,129 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 35px; }
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #952641;
+  color: white; }
+
+.dropdown {
+  text-align: center;
+  width: 25%;
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #952641;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown-content a:hover {
+  background: white;
+  color: #952641; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.menu_web {
+  display: none; }
+
+.lillelogo {
+  display: block;
+  color: #45526b; }
+
+.kontaktcontain {
+  margin-top: 60px;
+  text-align: center; }
+
+.fejlbillede {
+  width: auto;
+  height: auto; }
+
+.kontaktinfo {
+  margin-top: 130px; }
+
+.danmark {
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 10px; }
+
+.spanien {
+  margin-top: 10px;
+  text-align: right; }
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px;
+  color: #45526b; }
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  color: #45526b; }
+
+p {
+  color: #45526b;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside; }
+
+li {
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+@media screen and (min-width: 1200px) {
+  .lillelogo {
+    display: block; }
+
+  .logostreg {
+    margin-top: 100px;
+    margin-left: 20px; }
+
+  .header {
+    justify-content: space-between;
+    display: flex; }
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif; }
+
+  .dropdown {
+    display: none; }
+
+  a {
+    color: #45526b;
+    text-decoration: none;
+    font-size: 15px; } }
+
+/*# sourceMappingURL=404styles.css.map */
