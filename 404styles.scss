@@ -1,0 +1,181 @@
+// Alt der gælder for mobil og højere
+
+* { // Gælder alt på hele siden
+  -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
+  box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
+}
+
+body {
+  margin: 35px; // Ingen kanter i siden af browser
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: #952641;
+  color: white;
+}
+
+.dropdown {
+  text-align: center;
+  width: 25%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #952641;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: white;
+  color: #952641;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu_web {
+  display: none;
+}
+
+.lillelogo{
+  display: block;
+  color: #45526b;
+}
+.kontaktcontain{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.fejlbillede{
+  width: auto;
+  height: auto;
+}
+
+
+.kontaktinfo{
+  margin-top: 130px;
+}
+
+.danmark{
+  margin-top: 15px;
+  text-align: left;
+  margin-left: 10px;
+
+}
+
+.spanien{
+  margin-top: 10px;
+  text-align: right;
+}
+h1{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 15px;
+  color: #45526b;
+
+
+}
+
+h2{
+  font-family: 'Nunito', sans-serif;
+  font-size: 10px;
+  color: #45526b;
+
+}
+
+p{
+  color: #45526b;
+  font-size: 10px;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; // Ingen ydre margen fra overskrifter
+  padding: 0; // Ingen indre margen fra overskrifter
+}
+
+ul, ol {
+  margin: 0; // Ingen ydre margen fra lister
+  padding: 0; // Ingen indre margen fra lister
+  list-style-position: inside; // List punkter står på linje
+}
+
+li {
+  margin: 0; // Ingen ydre margen fra listpunkter
+}
+
+p {
+  margin: 0; // Ingen ydre margen fra paragraffer
+  padding: 0; // Ingen indre margen fra paragraffer
+}
+
+// Sikrer billeder er responsive
+img {
+  display: block; // Billeder er et element (laver linjeskift)
+  max-width: 100%; // Bredde må maks fylde 100%
+  height: auto; // Højden skal tilpasse sig
+}
+
+@media screen and (min-width: 768px) {
+  // Alt der ændres i tablet stående fra mobil
+}
+
+@media screen and (min-width: 992px) {
+  // Alt der ændres i tablet liggende fra mobil og tablet stående
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  .lillelogo {
+    display: block;
+  }
+
+  .logostreg{
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+  }
+
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  a {
+    color: #45526b;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+}
+
+@media print {
+  // Alt der gælder for print specifikt
+}

@@ -25,7 +25,7 @@ img{
   
 }
 .allemennesker{
-  margin-top: 130px;
+  margin-top: 35px;
 }
 
 .element1{
@@ -35,6 +35,7 @@ img{
   flex-direction: row;
   text-align: center;
 
+
 }
 .element2{
   height: auto;
@@ -42,6 +43,7 @@ img{
   display: flex;
   flex-direction: row;
   text-align: center;
+
 }
 
 .element3{
@@ -50,8 +52,34 @@ img{
   display: flex;
   flex-direction: row;
   text-align: center;
+
+}
+.billede1{
+ width: 0%;
+  height: 0%;
+}
+.textbillede1{
+  width: 100%;
+  height: auto;
+
+}
+.billede2{
+  height: 0%;
+  width: 0%;
+}
+.textbillede2{
+  width: 100%;
+  height: auto;
 }
 
+.billede3{
+  height: 0%;
+  width: 0%;
+}
+.textbillede3{
+  width: 100%;
+  height: auto;
+}
 
 .læsmere{
   background-color: #952641;
@@ -62,9 +90,6 @@ img{
   
 }
 
-.billede1{
-  clear: right;
-}
 
 .omosknap{
   background-color: #952641;
@@ -169,6 +194,7 @@ img{
     text-align: center;
     padding: 10px;
     align-content: space-between;
+    margin-top: 50px;
 
   }
 
@@ -226,6 +252,7 @@ img{
    font-size: 30px;
    text-align: center;
    padding: 10px;
+   margin-top: 50px;
 
  }
 
@@ -256,6 +283,9 @@ img{
   color: white;
   border: #952641;
 }
+.gallerioverskrift{
+  text-align: center;
+}
 
 .gallericontain{
   text-align: center;
@@ -276,7 +306,7 @@ img{
 
 
 .kontaktinfo{
-  margin-top: 20px;
+  margin-top: 130px;
 }
 
 .danmark{
@@ -347,10 +377,15 @@ p{
   font-family: Lato;
   display: none;
 
-
-
 }
-
+#fejlbillede{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: none !important;
+}
 .foooter{
   height: auto;
   width: 100%;
@@ -455,6 +490,11 @@ img {
 
 
   }
+  .omosoverskrift{
+    padding-top: 100px;
+    width: 40%;
+    margin: 0 auto;
+  }
 
   .mennesker {
     display: flex;
@@ -500,6 +540,7 @@ img {
   .forhandleroverskrift{
     width: 50%;
     margin: 0 auto;
+    margin-top: 100px;
   }
 
   .forhandler{
@@ -519,6 +560,7 @@ img {
 .gallerioverskrift{
   width: 50%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .galleriknap{
@@ -588,7 +630,39 @@ img {
   .some{
     display: none;
   }
-
+  .allemennesker{
+    margin-top: 70px;
+  }
+.billede1{
+  height: auto;
+  width: 20%;
+}
+  .textbillede1{
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .billede2{
+    height: auto;
+    width: 20%;
+  }
+  .textbillede2{
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .billede3{
+    height: auto;
+    width: 20%;
+  }
+  .textbillede3{
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+  }
 }
 
 @media print {

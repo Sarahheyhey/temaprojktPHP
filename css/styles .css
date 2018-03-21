@@ -16,7 +16,7 @@ body {
   height: auto; }
 
 .allemennesker {
-  margin-top: 130px; }
+  margin-top: 35px; }
 
 .element1 {
   height: auto;
@@ -39,15 +39,36 @@ body {
   flex-direction: row;
   text-align: center; }
 
+.billede1 {
+  width: 0%;
+  height: 0%; }
+
+.textbillede1 {
+  width: 100%;
+  height: auto; }
+
+.billede2 {
+  height: 0%;
+  width: 0%; }
+
+.textbillede2 {
+  width: 100%;
+  height: auto; }
+
+.billede3 {
+  height: 0%;
+  width: 0%; }
+
+.textbillede3 {
+  width: 100%;
+  height: auto; }
+
 .læsmere {
   background-color: #952641;
   border: #952641;
   margin-top: auto;
   width: auto;
   height: auto; }
-
-.billede1 {
-  clear: right; }
 
 .omosknap {
   background-color: #952641;
@@ -137,7 +158,8 @@ body {
   font-size: 30px;
   text-align: center;
   padding: 10px;
-  align-content: space-between; }
+  align-content: space-between;
+  margin-top: 50px; }
 
 .omostekst {
   position: relative;
@@ -182,7 +204,8 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-size: 30px;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 50px; }
 
 .forhandlertekst {
   position: relative;
@@ -203,6 +226,9 @@ body {
   color: white;
   border: #952641; }
 
+.gallerioverskrift {
+  text-align: center; }
+
 .gallericontain {
   text-align: center;
   background-color: #952641;
@@ -218,7 +244,7 @@ body {
   text-align: center; }
 
 .kontaktinfo {
-  margin-top: 20px; }
+  margin-top: 130px; }
 
 .danmark {
   margin-top: 15px;
@@ -272,6 +298,14 @@ p {
   border: none;
   font-family: Lato;
   display: none; }
+
+#fejlbillede {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: none !important; }
 
 .foooter {
   height: auto;
@@ -343,6 +377,11 @@ img {
     margin-top: 100px;
     justify-content: space-between; }
 
+  .omosoverskrift {
+    padding-top: 100px;
+    width: 40%;
+    margin: 0 auto; }
+
   .mennesker {
     display: flex;
     flex-direction: row;
@@ -373,7 +412,8 @@ img {
 
   .forhandleroverskrift {
     width: 50%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 100px; }
 
   .forhandler {
     margin-top: 350px; }
@@ -389,7 +429,8 @@ img {
 
   .gallerioverskrift {
     width: 50%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
 
   .galleriknap {
     background-color: #952641;
@@ -438,6 +479,39 @@ img {
     display: block; }
 
   .some {
-    display: none; } }
+    display: none; }
+
+  .allemennesker {
+    margin-top: 70px; }
+
+  .billede1 {
+    height: auto;
+    width: 20%; }
+
+  .textbillede1 {
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left; }
+
+  .billede2 {
+    height: auto;
+    width: 20%; }
+
+  .textbillede2 {
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left; }
+
+  .billede3 {
+    height: auto;
+    width: 20%; }
+
+  .textbillede3 {
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    text-align: left; } }
 
 /*# sourceMappingURL=styles%20.css.map */
