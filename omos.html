@@ -3,6 +3,8 @@
 <!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
 <html lang="da">
 
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Nunito" rel="stylesheet">
+
 <!-- I <head> har man opsætning - alt det som man ikke ser som selve indholdet -->
 <head>
 
@@ -37,12 +39,14 @@
 
     <meta property="og:locale" content="da_DK">
 
+    <script src="https://use.fontawesome.com/59fbb91632.js"></script>
+
 
 </head>
 
 <!-- i <body> har man alt indhold på siden -->
 <div class="header">
-    <a href="index.html"><img class="lillelogo" src="images/lillelogo.png"></a>
+    <a href="index.html"><img class="lillelogo" src="images/lillelogo2.png"></a>
     <div class="dropdown">
         <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
         <div class="dropdown-content">
@@ -50,15 +54,14 @@
             <a href="omos.html">OM OS</a>
             <a href="forhandler.html">FORHANDLERE</a>
             <a href="galleri.html">GALLERI</a>
-            <a href="contact.html">KONTAKT</a>
         </div>
     </div>
     <div class="menu_web">
         <a class="front_link" href="index.html">HJEM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="trads_link" href="omos.html">OM OS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="schram_link" href="forhandler.html">FORHANDLERE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="contact_link" href="contact.html">KONTAKT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="some">f</button>&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
 </div>
 
@@ -98,7 +101,7 @@
 
 <div class="kontaktinfo">
 
-    <br><div class="danmark>">
+    <div class="danmark>">
     <h2>DANMARK</h2>
     <p>Tlf: +45 43 21 98 67<br>
         Mail: domino@pontas.dk<br>
@@ -116,11 +119,20 @@
 </div>
 
 
+
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 </script>
 
 <script type="text/javascript">
     $(document).ready(function (e) {
+
         // Din kode her
 
         $(document).click(function() {
@@ -129,6 +141,24 @@
 
 
     })
+
+
+        // ===== Scroll to Top ====
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200);    // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+
+
+    });
 
 </script>
 

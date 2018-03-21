@@ -49,7 +49,7 @@
 <body>
 
 <div class="header">
-    <a href="index.html"><img class="lillelogo" src="images/lillelogo.png"></a>
+    <a href="index.html"><img class="lillelogo" src="images/lillelogo2.png"></a>
     <div class="dropdown">
         <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
         <div class="dropdown-content">
@@ -64,11 +64,10 @@
         <a class="front_link" href="index.html">HJEM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="trads_link" href="omos.html">OM OS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="schram_link" href="forhandler.html">FORHANDLERE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="contact_link" href="contact.html">KONTAKT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.facebook.com/"><button class="some">f</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
 </div>
-
 
 
 <div class="logostreg">
@@ -139,16 +138,14 @@
     <div class="forhandlertekst">
        <br><h2>Vores vin er nem at finde og vi er sikker på at den findes i en udvalgt butik nær dig. Her ses en liste over vores forhandlere i hele landet. Vi tager forbehold for at varen enten ikke er på lager eller er udsolgt i din lokale forhandlere. Du kan ligeledes se på kortet og få et hurtigt overblik. Vores hovedforhandlere er Kvickly, Irma og Super-Brugsen.</h2>
     </div>
-    <button class="knap"><h2>Vis kort over forhandlere</h2></button>
+    <br>
+    <button class="knap"><p>Vis kort over forhandlere</p></button>
 </div>
 </div>
 
 <div class="gallericontain">
 
     <div class="gallerioverskrift">
-    <div class="h"><img src="images/hvidkrummelurehøjre.png"></div>
-    <div class="v"><img src="images/krummelurevenstre.png"></div>
-    <h1>GALLERI</h1>
     </div>
 
 </div>
@@ -164,7 +161,7 @@
 
 <div class="kontaktinfo">
 
-   <br><div class="danmark>">
+   <div class="danmark>">
         <h2>DANMARK</h2>
         <p>Tlf: +45 43 21 98 67<br>
             Mail: domino@pontas.dk<br>
@@ -184,25 +181,37 @@
  <div class="foooter">
      <div class="logopng"><img src="images/Logo.png"></div>
 
-     <button class="some">
-         f
-     </button>
 
-     <button class="op">
-         ^
-     </button>
  </div>
 
 
+
+<!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
 </script>
 
 <script type="text/javascript">
 
-      $('.op').click(function (e) {
-          $(window).scrollTop(0)
-      })
+
+      // ===== Scroll to Top ====
+      $(window).scroll(function() {
+          if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+              $('#return-to-top').fadeIn(200);    // Fade in the arrow
+          } else {
+              $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+          }
+      });
+      $('#return-to-top').click(function() {      // When arrow is clicked
+          $('body,html').animate({
+              scrollTop : 0                       // Scroll to top of body
+          }, 500);
+      });
 
 
 </script>

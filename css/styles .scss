@@ -14,6 +14,9 @@ body {
   background-attachment: scroll;
   background-repeat: no-repeat;
 
+a:hover{
+  color: white;
+  background-color: #952641;
 }
 
 img{
@@ -138,8 +141,8 @@ img{
 }
 
 .logostreg{
-  height: 63%;
-  width: 63%;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 10px;
 }
@@ -150,15 +153,15 @@ img{
     display: -webkit-flex;
   }
 
-  .omos{
-    position: relative;
-    width: 100%;
-    padding: 10px;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 140px;
-  }
+.omos{
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
 
   .omosoverskrift{
     position: relative;
@@ -172,6 +175,16 @@ img{
 
   }
 
+
+.omostekst{
+  position: relative;
+  width: auto;
+  height: 50%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+  padding: 10px;
+  text-align: justify;
+}
 
 
   .omostekst{
@@ -229,15 +242,18 @@ img{
 
  }
 
- .forhandlertekst{
-   position: relative;
-   width: auto;
-   height: 50%;
-   font-family: 'Nunito', sans-serif;
-   font-size: 11px;
-   padding: 10px;
-   text-align: left;
- }
+
+.forhandlertekst{
+  position: relative;
+  width: auto;
+  height: 50%;
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  text-align: justify;
+}
+
 
   $red: #952641;
   $lightblue: #45526b;
@@ -257,37 +273,28 @@ img{
   border: #952641;
 }
 
-.gallericontain{
-  text-align: center;
-  background-color: $red;
-  height: 250px;
-  width: auto;
-  margin-top: 25px;
-}
 
 .omsosknap{
   background-color: $red;
 }
 
 .kontaktcontain{
-  margin-top: 60px;
+  margin-top: 80px;
   text-align: center;
 }
 
 
 .kontaktinfo{
-  margin-top: 20px;
+margin-top: 50px;
+  padding: 20px;
 }
 
 .danmark{
-  margin-top: 15px;
-  text-align: left;
-  margin-left: 10px;
+
 
 }
 
 .spanien{
-  margin-top: 10px;
   text-align: right;
 }
 
@@ -296,6 +303,18 @@ img{
 }
 
 
+
+.gallerioverskrift2{
+  display: none;
+}
+
+.galleritekst {
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: justify;
+  margin-bottom: 50px;
+  padding: 10px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
@@ -325,17 +344,6 @@ p{
 }
 
 
-.op{
-  border-radius: 50%;
-  background-color: $red;
-  color: white;
-  height: 30px;
-  width: 30px;
-  text-align: center;
-  font-size: 20px;
-  border: none;
-  float: right;
-}
 .some{
   background-color: $red;
   height: 30px;
@@ -344,9 +352,8 @@ p{
   color: white;
   font-size: 20px;
   border: none;
-  font-family: Lato;
   display: none;
-
+  font-family: 'Nunito', sans-serif;
 
 
 }
@@ -380,6 +387,189 @@ img {
   height: auto; // Højden skal tilpasse sig
 }
 
+//Start nivoslider
+
+table {
+  border-collapse:separate;
+  border-spacing:0;
+}
+caption, th, td {
+  text-align:left;
+  font-weight:normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content:"";
+}
+blockquote, q {
+  quotes:"" "";
+}
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+  display: block;
+}
+
+.slider-wrapper {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.clear {
+  clear:both;
+}
+
+.nivoSlider {
+  position:relative;
+  width:100%;
+  height:auto;
+  overflow: hidden;
+}
+.nivoSlider img {
+  position:absolute;
+  top:0px;
+  left:0px;
+  max-width: none;
+}
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  border:0;
+  padding:0;
+  margin:0;
+  z-index:6;
+  display:none;
+  filter:alpha(opacity=0);
+  opacity:0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display:block;
+  position:absolute;
+  z-index:5;
+  height:100%;
+  top:0;
+}
+.nivo-box {
+  display:block;
+  position:absolute;
+  z-index:5;
+  overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  background:#000;
+  color:#fff;
+  width:100%;
+  z-index:8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter:alpha(opacity=8);
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+}
+.nivo-caption p {
+  padding:5px;
+  margin:0;
+}
+.nivo-caption a {
+  display:inline !important;
+}
+.nivo-html-caption {
+  display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position:absolute;
+  top:45%;
+  z-index:9;
+  cursor:pointer;
+}
+.nivo-prevNav {
+  left:0px;
+  background-color: #952641;
+  font-size: 20px;
+}
+.nivo-nextNav {
+  right:0px;
+  background-color: #952641;
+  font-size: 20px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+  text-align:center;
+  padding: 15px 0;
+}
+.nivo-controlNav a {
+  cursor:pointer;
+}
+.nivo-controlNav a.active {
+  font-weight:bold;
+}
+
+// Slut nivoslider
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #962842;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: #962842;
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
 
@@ -388,6 +578,7 @@ img {
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -395,6 +586,7 @@ img {
   body{
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 100px;
   }
 
   .h{
@@ -412,18 +604,28 @@ img {
 
   .lillelogo {
     display: block;
+    height: auto;
+    width: 50%;
   }
 
   .logostreg{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 20px;
+    height: 65%;
+    width: 63%;
   }
 
   .header {
     justify-content: space-between;
     display: flex;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    width: 98%;
+    z-index: 5000;
+    text-shadow: 2px 2px 4px #000000;
   }
-
 
   .menu_web {
     display: block;
@@ -449,7 +651,7 @@ img {
   .omos {
     flex-wrap: wrap;
     flex-direction: row;
-    margin-right: 30px;
+    _margin-right: 30px;
     margin-top: 100px;
     justify-content: space-between;
 
@@ -463,7 +665,7 @@ img {
     margin-top: 150px;
     height: auto;
     width: 250%;
-    margin-right: -30px;
+    margin-right: -150px;
     margin-left: 30px;
 
 
@@ -471,17 +673,16 @@ img {
 
   .menneske1{
     height: auto;
-
+    display: block;
   }
 
   .menneske2{
     height: auto;
-
+    display: block;
 
   }
   .menneske3{
        height: auto;
-
   }
 
 
@@ -490,12 +691,10 @@ img {
   }
 
   .menneske2 {
+    height: auto;
     display: block;
   }
 
-  .menneske3 {
-    display: block;
-  }
 
   .forhandleroverskrift{
     width: 50%;
@@ -512,15 +711,18 @@ img {
     margin-top: 5px;
   }
 
-  .gallericontain{
-    margin-top: 400px;
-    height: 500px;
-  }
 .gallerioverskrift{
   width: 50%;
   margin: 0 auto;
 }
 
+.galleritekst {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: justify;
+  margin-bottom: 100px;
+}
 .galleriknap{
   background-color: $red;
   border: $red;
@@ -543,19 +745,28 @@ img {
 
   }
 
-  .op{
-    display: block;
-  }
 
   .kontaktinfo{
     justify-content: space-between;
-    margin-top: 75px;
+    margin-top: 100px;
+    display: flex;
+  }
+
+
+  .danmark{
+    float: left;
+
+  }
+
+  .spanien {
+    float: right;
+    text-align: right;
   }
 
 .kontaktcontain{
-  width: 50%;
+  _width: 50%;
   margin: 0 auto;
-  margin-top: 5px;
+  margin-top: 300px;
 }
 
   h1{
@@ -585,9 +796,6 @@ img {
 
   }
 
-  .some{
-    display: none;
-  }
 
 }
 

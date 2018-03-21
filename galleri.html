@@ -49,7 +49,7 @@
 <body>
 
 <div class="header">
-    <a href="index.html"><img class="lillelogo" src="images/lillelogo.png"></a>
+    <a href="index.html"><img class="lillelogo" src="images/lillelogo2.png"></a>
     <div class="dropdown">
         <button class="dropbtn"><i class="fa fa-bars fa-3x"></i></button>
         <div class="dropdown-content">
@@ -63,7 +63,8 @@
         <a class="front_link" href="index.html">HJEM</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="trads_link" href="omos.html">OM OS</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a class="schram_link" href="forhandler.html">FORHANDLERE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="wolmar_link" href="galleri.html">GALLERI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="some">f</button>&nbsp;&nbsp;&nbsp;&nbsp;
     </div>
 </div>
 
@@ -81,25 +82,49 @@
 <br>
 <br>
 
+<div class="galleritekst">
+    <br><p>Det er vigtig for os, at vores kunder kan se med egne øjne hvor vinen kommer fra. I galleriet har vi sørget for at vise alle sider af vingården. Lige fra de store vinmarker til produktionshallen hvor druerne presses til farverig saft. Vi ønsker at vores passion for spansk vin skinner igennem alt hvad vi laver, og håber at vores kunder forbinder vores gode vin med en god historie. På vingården i Spanien er der en kælder med vægge beklædt af gamle fotografier. På billederne kan man se Dominio de Pontas grundlægger Ramos Florentino stikke de første vinstokke i jorden. Vinstokke som stadig den dag i dag, høst efter høst,  leverer overdådige klaser af saftige druer. Der hænger billeder af de første vinflasker og på billederne er der altid mange mennesker samlet på vingården. Vi håber at vi som virksomhed sår frø, så nogen om 100 år ser tilbage på vores arbejde, og mærker passionen for dyrkning af vin på traditionel vis. Der er nemlig noget helt særligt over den fagre vinverden, som bringer os alle tættere sammen.
+</p></div>
+
 <div id="slider" class="nivoSlider">
     <img src="images/Galleri1.jpg" alt="" />
-    <img src="images/Galleri3.jpeg" alt="" title="This is an example of a caption" />
+    <img src="images/Galleri3.jpeg" alt=""/>
     <img src="images/Forside.jpeg" alt="" />
 </div>
 
-<div class="forhandlertekst">
-    <br><p>På vingården Dominio de Pontas lægger vi vægt på det autentiske arbejde
-    som kommer til udtryk i den speciale smag som vores vin har.
-    Alle vores druer håndplukkes efter at de har vokset sig store og lækre,
-    her efter mases de så al saften udvindes og lagres på egetræstønder i minimum 36 måneder.
-</p></div>
+
+
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+
+<!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 
 <script type="text/javascript" src="nivoslider/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="nivoslider/jquery.nivo.slider.js"></script>
 <script type="text/javascript">
-    $(window).load(function() {
+    $(window).on ("load scroll", function(e) {
         $('#slider').nivoSlider();
+
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
     });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    });
+
+    $(document).ready(function (e) {
+        $('div.gallerioverskrift2').fadeIn(4000).removeClass('gallerioverskrift2');
+    });
+
+
+
 </script>
  
 </body>
