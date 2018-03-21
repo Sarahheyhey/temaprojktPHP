@@ -165,7 +165,7 @@ img{
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 120px;
+  margin-top: 50px;
 }
 
 .omosoverskrift{
@@ -242,7 +242,6 @@ img{
   width: auto;
   height: 50%;
   font-family: 'Nunito', sans-serif;
-  font-size: 11px;
   padding: 10px;
   text-align: left;
   color: white;
@@ -273,24 +272,22 @@ $white: #ffffff;
 }
 
 .kontaktcontain{
-  margin-top: 100px;
+  margin-top: 80px;
   text-align: center;
 }
 
 
 .kontaktinfo{
-  margin-top: 20px;
+margin-top: 50px;
+  padding: 20px;
 }
 
 .danmark{
-  margin-top: 15px;
-  text-align: left;
-  margin-left: 10px;
+
 
 }
 
 .spanien{
-  margin-top: 10px;
   text-align: right;
 }
 
@@ -306,6 +303,14 @@ $white: #ffffff;
 
 .gallerioverskrift2{
   display: none;
+}
+
+.galleritekst {
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: justify;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -470,7 +475,9 @@ aside, nav, article, figure {
   filter:alpha(opacity=8);
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
 }
 .nivo-caption p {
   padding:5px;
@@ -492,10 +499,12 @@ aside, nav, article, figure {
 .nivo-prevNav {
   left:0px;
   background-color: #952641;
+  font-size: 20px;
 }
 .nivo-nextNav {
   right:0px;
   background-color: #952641;
+  font-size: 20px;
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
@@ -688,6 +697,13 @@ aside, nav, article, figure {
   margin: 0 auto;
 }
 
+.galleritekst {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5px;
+  text-align: justify;
+  margin-bottom: 100px;
+}
 .galleriknap{
   background-color: $red;
   border: $red;
@@ -705,7 +721,7 @@ aside, nav, article, figure {
   .gallericontain2{
     width: 50%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 10px;
   }
 
   .knap{
@@ -719,10 +735,22 @@ aside, nav, article, figure {
   .kontaktinfo{
     justify-content: space-between;
     margin-top: 100px;
+    display: flex;
+  }
+
+
+  .danmark{
+    float: left;
+
+  }
+
+  .spanien {
+    float: right;
+    text-align: right;
   }
 
 .kontaktcontain{
-  width: 50%;
+  _width: 50%;
   margin: 0 auto;
   margin-top: 300px;
 }
