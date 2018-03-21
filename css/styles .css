@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  margin: 20px;
+  margin: 35px;
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
   background-position: inherit;
@@ -79,15 +79,13 @@ a:hover {
   border: none;
   cursor: pointer;
   background-color: #952641;
-  color: white;
-  z-index: 200; }
+  color: white; }
 
 .dropdown {
   text-align: center;
   width: 25%;
   position: relative;
-  display: inline-block;
-  z-index: 200; }
+  display: inline-block; }
 
 .dropdown-content {
   display: none;
@@ -95,8 +93,7 @@ a:hover {
   background-color: #952641;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  font-family: 'Nunito', sans-serif; }
+  z-index: 1; }
 
 .dropdown-content a {
   color: white;
@@ -182,7 +179,7 @@ a:hover {
   width: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 80px; }
+  margin-top: 95px; }
 
 .forhandleroverskrift {
   position: relative;
@@ -216,7 +213,6 @@ a:hover {
 .omsosknap {
   background-color: #952641; }
 
-.kontaktcontain {
   margin-top: 80px;
   text-align: center; }
 
@@ -251,17 +247,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 20px;
+  font-size: 15px;
   color: white; }
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  font-size: 17px;
+  font-size: 10px;
   color: white; }
 
 p {
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Nunito', sans-serif; }
 
 .some {
@@ -473,6 +469,7 @@ aside, nav, article, figure {
   color: #fff;
   top: 5px; }
 
+
 @media screen and (min-width: 1200px) {
   body {
     margin-left: 100px;
@@ -513,7 +510,7 @@ aside, nav, article, figure {
 
   .menu_web {
     display: block;
-    font-family: "Nunito", sans-serif; }
+    font-family: 'Nunito', sans-serif; }
 
   .dropdown {
     display: none; }
@@ -567,6 +564,10 @@ aside, nav, article, figure {
     margin: 0 auto;
     margin-top: 5px; }
 
+  .gallericontain {
+    margin-top: 400px;
+    height: 500px; }
+  
   .gallerioverskrift {
     width: 50%;
     margin: 0 auto; }
@@ -601,6 +602,7 @@ aside, nav, article, figure {
 
   .kontaktinfo {
     justify-content: space-between;
+
     margin-top: 100px;
     display: flex; }
 
@@ -610,6 +612,7 @@ aside, nav, article, figure {
   .spanien {
     float: right;
     text-align: right; }
+
 
   .kontaktcontain {
     _width: 50%;
@@ -623,15 +626,19 @@ aside, nav, article, figure {
 
   h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     color: white; }
 
   p {
     color: white;
-    font-size: 15px;
+    font-size: 11px;
     font-family: 'Nunito', sans-serif; }
 
   .logopng {
+    display: block; }
+
+  .some {
+    display: none; } }
     display: block;
     height: 50%;
     width: 50%;

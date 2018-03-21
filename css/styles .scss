@@ -1,4 +1,4 @@
-@charset "utf-8"; // Alt der gælder for mobil og højere
+// Alt der gælder for mobil og højere
 
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
@@ -6,14 +6,13 @@
 }
 
 body {
-  margin: 20px; // Ingen kanter i siden af browser
+  margin: 35px; // Ingen kanter i siden af browser
+
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
   background-position: inherit;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  color: white;
-}
 
 a:hover{
   color: white;
@@ -81,7 +80,6 @@ img{
   display: none;
 
 }
-
 .h{
   height: 40px;
   width: 40px;
@@ -100,7 +98,6 @@ img{
   cursor: pointer;
   background-color: #952641;
   color: white;
-  z-index: 200;
 }
 
 .dropdown {
@@ -108,7 +105,6 @@ img{
   width: 25%;
   position: relative;
   display: inline-block;
-  z-index:200;
 }
 
 .dropdown-content {
@@ -118,7 +114,6 @@ img{
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
-  font-family: 'Nunito', sans-serif;
 }
 
 .dropdown-content a {
@@ -142,7 +137,7 @@ img{
 }
 
 .lillelogo{
-  display: none;
+ display: none;
 }
 
 .logostreg{
@@ -152,11 +147,11 @@ img{
   margin-top: 10px;
 }
 
-.content{
-  height: auto;
-  width: 100%;
-  display: -webkit-flex;
-}
+  .content{
+    height: auto;
+    width: 100%;
+    display: -webkit-flex;
+  }
 
 .omos{
   position: relative;
@@ -168,16 +163,17 @@ img{
   margin-top: 50px;
 }
 
-.omosoverskrift{
-  position: relative;
-  width: 95%;
-  color: white;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
-  align-content: space-between;
-}
+  .omosoverskrift{
+    position: relative;
+    width: 95%;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    align-content: space-between;
+
+  }
 
 
 .omostekst{
@@ -190,6 +186,15 @@ img{
   text-align: justify;
 }
 
+
+  .omostekst{
+    position: relative;
+    width: auto;
+    height: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    padding: 10px;
+  }
 
 .mennesker{
   display: none;
@@ -221,21 +226,22 @@ img{
   width: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 95px;
 
-
+  
 }
 
-.forhandleroverskrift{
-  position: relative;
-  width: auto;
-  color: white;
-  font-family: 'Libre Baskerville', serif;
-  font-size: 30px;
-  text-align: center;
-  padding: 10px;
+ .forhandleroverskrift{
+   position: relative;
+   width: auto;
+   color: white;
+   font-family: 'Libre Baskerville', serif;
+   font-size: 30px;
+   text-align: center;
+   padding: 10px;
 
-}
+ }
+
 
 .forhandlertekst{
   position: relative;
@@ -248,10 +254,11 @@ img{
   text-align: justify;
 }
 
-$red: #952641;
-$lightblue: #45526b;
-$darkblue: #262d3b;
-$white: #ffffff;
+
+  $red: #952641;
+  $lightblue: #45526b;
+  $darkblue: #262d3b;
+  $white: #ffffff;
 
 
 .forhandlercontain{
@@ -295,11 +302,7 @@ margin-top: 50px;
   display: none;
 }
 
-.gallericontain2{
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
-}
+
 
 .gallerioverskrift2{
   display: none;
@@ -320,21 +323,26 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-family: 'Libre Baskerville', serif;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
+
+
 }
 
 h2{
   font-family: 'Nunito', sans-serif;
-  font-size: 17px;
+  font-size: 10px;
   color: white;
+
 }
 
 p{
   color: white;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Nunito', sans-serif;
+
 }
+
 
 .some{
   background-color: $red;
@@ -344,7 +352,9 @@ p{
   color: white;
   font-size: 20px;
   border: none;
+  display: none;
   font-family: 'Nunito', sans-serif;
+
 
 }
 
@@ -562,6 +572,8 @@ aside, nav, article, figure {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+
+
 }
 
 @media screen and (min-width: 992px) {
@@ -617,7 +629,7 @@ aside, nav, article, figure {
 
   .menu_web {
     display: block;
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
 
   }
 
@@ -630,7 +642,6 @@ aside, nav, article, figure {
     text-decoration: none;
     font-size: 15px;
   }
-
 
   .content{
     margin-top: 300px;
@@ -671,6 +682,15 @@ aside, nav, article, figure {
 
   }
   .menneske3{
+       height: auto;
+  }
+
+
+  .menneske1 {
+    display: block;
+  }
+
+  .menneske2 {
     height: auto;
     display: block;
   }
@@ -690,7 +710,6 @@ aside, nav, article, figure {
     margin:  0 auto;
     margin-top: 5px;
   }
-
 
 .gallerioverskrift{
   width: 50%;
@@ -718,11 +737,6 @@ aside, nav, article, figure {
   }
 
 
-  .gallericontain2{
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 10px;
-  }
 
   .knap{
     padding: 8px;
@@ -765,24 +779,21 @@ aside, nav, article, figure {
 
   h2{
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 13px;
     color: white;
 
   }
 
   p{
     color: white;
-    font-size: 15px;
+    font-size: 11px;
     font-family: 'Nunito', sans-serif;
 
   }
 
   .logopng{
     display: block;
-    height: 50%;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+
   }
 
 
