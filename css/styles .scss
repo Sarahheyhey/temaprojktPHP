@@ -187,6 +187,7 @@ img{
   font-family: 'Nunito', sans-serif;
   font-size: 11px;
   padding: 10px;
+  text-align: justify;
 }
 
 
@@ -245,6 +246,7 @@ img{
   padding: 10px;
   text-align: left;
   color: white;
+  text-align: justify;
 }
 
 $red: #952641;
@@ -265,12 +267,6 @@ $white: #ffffff;
   border: #952641;
 }
 
-.gallericontain{
-  text-align: center;
-  height: 250px;
-  width: auto;
-  margin-top: 25px;
-}
 
 .omsosknap{
   background-color: $red;
@@ -561,6 +557,7 @@ aside, nav, article, figure {
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -568,6 +565,7 @@ aside, nav, article, figure {
   body{
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 100px;
   }
 
   .h{
@@ -585,6 +583,8 @@ aside, nav, article, figure {
 
   .lillelogo {
     display: block;
+    height: auto;
+    width: 50%;
   }
 
   .logostreg{
@@ -603,8 +603,8 @@ aside, nav, article, figure {
     right: 20px;
     width: 98%;
     z-index: 5000;
+    text-shadow: 2px 2px 4px #000000;
   }
-
 
   .menu_web {
     display: block;
@@ -631,7 +631,7 @@ aside, nav, article, figure {
   .omos {
     flex-wrap: wrap;
     flex-direction: row;
-    margin-right: 30px;
+    _margin-right: 30px;
     margin-top: 100px;
     justify-content: space-between;
 
@@ -645,7 +645,7 @@ aside, nav, article, figure {
     margin-top: 150px;
     height: auto;
     width: 250%;
-    margin-right: -30px;
+    margin-right: -150px;
     margin-left: 30px;
 
 
@@ -682,8 +682,7 @@ aside, nav, article, figure {
     margin-top: 5px;
   }
 
-  .gallericontain{
-  }
+
 .gallerioverskrift{
   width: 50%;
   margin: 0 auto;
@@ -725,7 +724,7 @@ aside, nav, article, figure {
 .kontaktcontain{
   width: 50%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 300px;
 }
 
   h1{
