@@ -4,12 +4,16 @@
   box-sizing: border-box; }
 
 body {
-  margin: 35px;
+  margin: 20px;
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
   background-position: inherit;
   background-attachment: scroll;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  color: white; }
+
+a:hover {
+  color: #952641; }
 
 .læsmeretekst {
   width: auto;
@@ -95,13 +99,15 @@ body {
   border: none;
   cursor: pointer;
   background-color: #952641;
-  color: white; }
+  color: white;
+  z-index: 200; }
 
 .dropdown {
   text-align: center;
   width: 25%;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  z-index: 200; }
 
 .dropdown-content {
   display: none;
@@ -109,7 +115,8 @@ body {
   background-color: #952641;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1; }
+  z-index: 1;
+  font-family: 'Nunito', sans-serif; }
 
 .dropdown-content a {
   color: white;
@@ -195,7 +202,7 @@ body {
   width: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 95px; }
+  margin-top: 80px; }
 
 .forhandleroverskrift {
   position: relative;
@@ -214,7 +221,8 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 11px;
   padding: 10px;
-  text-align: left; }
+  text-align: left;
+  color: white; }
 
 .forhandlercontain {
   width: 100%;
@@ -240,7 +248,7 @@ body {
   background-color: #952641; }
 
 .kontaktcontain {
-  margin-top: 60px;
+  margin-top: 100px;
   text-align: center; }
 
 .kontaktinfo {
@@ -258,23 +266,28 @@ body {
 .logopng {
   display: none; }
 
+.gallericontain2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
 h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
+  font-size: 20px;
   color: white; }
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  font-size: 10px;
+  font-size: 17px;
   color: white; }
 
 p {
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif; }
 
 .op {
@@ -296,8 +309,8 @@ p {
   color: white;
   font-size: 20px;
   border: none;
-  font-family: Lato;
-  display: none; }
+  font-family: "Nunito", sans-serif; }
+
 
 #fejlbillede {
   height: 100%;
@@ -329,6 +342,138 @@ img {
   max-width: 100%;
   height: auto; }
 
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+  display: block; }
+
+.slider-wrapper {
+  width: 80%;
+  margin: 100px auto; }
+
+.clear {
+  clear: both; }
+
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+
+.nivoSlider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  max-width: none; }
+
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important; }
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+  filter: alpha(opacity=0);
+  opacity: 0; }
+
+/* The slices and boxes in the Slider */
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0; }
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden; }
+
+.nivo-box img {
+  display: block; }
+
+/* Caption styles */
+.nivo-caption {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  z-index: 8;
+  padding: 5px 10px;
+  opacity: 0.8;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=8);
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+.nivo-caption p {
+  padding: 5px;
+  margin: 0; }
+
+.nivo-caption a {
+  display: inline !important; }
+
+.nivo-html-caption {
+  display: none; }
+
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer; }
+
+.nivo-prevNav {
+  left: 0px; }
+
+.nivo-nextNav {
+  right: 0px; }
+
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+  text-align: center;
+  padding: 15px 0; }
+
+.nivo-controlNav a {
+  cursor: pointer; }
+
+.nivo-controlNav a.active {
+  font-weight: bold; }
+
 @media screen and (min-width: 1200px) {
   body {
     margin-left: 100px;
@@ -357,7 +502,7 @@ img {
 
   .menu_web {
     display: block;
-    font-family: 'Nunito', sans-serif; }
+    font-family: "Nunito", sans-serif; }
 
   .dropdown {
     display: none; }
@@ -424,8 +569,9 @@ img {
     margin-top: 5px; }
 
   .gallericontain {
-    margin-top: 400px;
+    margin-top: 300px;
     height: 500px; }
+
 
   .gallerioverskrift {
     width: 50%;
@@ -443,6 +589,12 @@ img {
     border: #952641;
     margin: 0 auto; }
 
+  .gallericontain2 {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px; }
+
+
   .knap {
     padding: 8px;
     margin-top: 30px;
@@ -453,7 +605,7 @@ img {
 
   .kontaktinfo {
     justify-content: space-between;
-    margin-top: 75px; }
+    margin-top: 100px; }
 
   .kontaktcontain {
     width: 50%;
@@ -467,16 +619,20 @@ img {
 
   h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     color: white; }
 
   p {
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif; }
 
   .logopng {
-    display: block; }
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; }
 
   .some {
     display: none; }
