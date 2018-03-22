@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  margin: 35px;
+  margin: 20px;
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
   background-position: inherit;
@@ -13,8 +13,9 @@ body {
   color: white; }
 
 a:hover {
-  color: white;
-  background-color: #952641; }
+  color: #ffffff;
+  background-color: #952641;
+  text-decoration: none; }
 
 .læsmeretekst {
   width: auto;
@@ -74,18 +75,28 @@ a:hover {
   width: 40px;
   float: left; }
 
+.h2 {
+  height: 40px;
+  width: 40px; }
+
+.v2 {
+  height: 40px;
+  width: 40px; }
+
 .dropbtn {
   font-size: 16px;
   border: none;
   cursor: pointer;
   background-color: #952641;
-  color: white; }
+  color: #ffffff;
+  z-index: 200; }
 
 .dropdown {
   text-align: center;
   width: 25%;
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  z-index: 200; }
 
 .dropdown-content {
   display: none;
@@ -93,16 +104,17 @@ a:hover {
   background-color: #952641;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  z-index: 1; }
+  z-index: 1;
+  font-family: 'Nunito', sans-serif; }
 
 .dropdown-content a {
-  color: white;
+  color: #ffffff;
   padding: 12px 16px;
   text-decoration: none;
   display: block; }
 
 .dropdown-content a:hover {
-  background: white;
+  background: #ffffff;
   color: #952641; }
 
 .dropdown:hover .dropdown-content {
@@ -127,22 +139,25 @@ a:hover {
 
 .omos {
   position: relative;
-  width: 100%;
+  width: 1000px;
+  height: auto;
   padding: 10px;
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 50px; }
+  margin-top: 50px;
+  text-align: center; }
 
 .omosoverskrift {
   position: relative;
-  width: 95%;
-  color: white;
+  width: 100%;
+  color: #ffffff;
   font-family: 'Libre Baskerville', serif;
-  font-size: 30px;
   text-align: center;
   padding: 10px;
-  align-content: space-between; }
+  align-content: space-between;
+  height: auto;
+  margin: 0 auto; }
 
 .omostekst {
   position: relative;
@@ -174,21 +189,39 @@ a:hover {
   text-align: center;
   margin: 5px; }
 
+.carlos, .michael, .anette {
+  width: 70%;
+  margin-left: 5%; }
+
+.omcarlos, .ommichael, .omanette {
+  text-align: justify;
+  margin-left: 2%; }
+
+.element2 {
+  _margin-left: 20%;
+  justify-content: space-between; }
+
+.ommichael {
+  _padding-right: 2%; }
+
+.billede1, .billede2, .billede3 {
+  margin: 2%;
+  width: 20%; }
+
 .forhandler {
   height: auto;
   width: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 95px; }
+  margin-top: 100px; }
 
 .forhandleroverskrift {
   position: relative;
   width: auto;
-  color: white;
+  color: #ffffff;
   font-family: 'Libre Baskerville', serif;
-  font-size: 30px;
   text-align: center;
-  padding: 10px; }
+  margin-top: 80px; }
 
 .forhandlertekst {
   position: relative;
@@ -196,7 +229,6 @@ a:hover {
   height: 50%;
   font-family: 'Nunito', sans-serif;
   padding: 10px;
-  text-align: left;
   color: white;
   text-align: justify; }
 
@@ -207,13 +239,23 @@ a:hover {
 
 .knap {
   background-color: #952641;
-  color: white;
+  color: #ffffff;
+  border: #952641; }
+
+.kort {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1px 6px;
+  background-color: #952641;
+  color: #ffffff;
   border: #952641; }
 
 .omsosknap {
   background-color: #952641; }
 
-  margin-top: 80px;
+.kontaktcontain {
+  margin-top: 100px;
   text-align: center; }
 
 .kontaktinfo {
@@ -234,11 +276,16 @@ a:hover {
 .gallerioverskrift2 {
   display: none; }
 
+.gallericontain2 {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
 .galleritekst {
   margin: 0 auto;
   margin-top: 5px;
   text-align: justify;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -247,17 +294,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
-  color: white; }
+  font-size: 20px;
+  color: #ffffff; }
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  font-size: 10px;
-  color: white; }
+  font-size: 17px;
+  color: #ffffff; }
 
 p {
-  color: white;
-  font-size: 10px;
+  color: #ffffff;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif; }
 
 .some {
@@ -265,7 +312,7 @@ p {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  color: white;
+  color: #ffffff;
   font-size: 20px;
   border: none;
   font-family: 'Nunito', sans-serif; }
@@ -434,7 +481,7 @@ aside, nav, article, figure {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #962842;
+  background: #952641;
   width: 50px;
   height: 50px;
   display: block;
@@ -447,7 +494,8 @@ aside, nav, article, figure {
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  z-index: 7000; }
 
 #return-to-top i {
   color: #fff;
@@ -463,18 +511,31 @@ aside, nav, article, figure {
   transition: all 0.3s ease; }
 
 #return-to-top:hover {
-  background: #962842; }
+  background: #952641; }
 
 #return-to-top:hover i {
   color: #fff;
   top: 5px; }
 
+.somebot {
+  background-color: #952641;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  color: white;
+  font-size: 25px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none; }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   body {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 100px; }
+
+  .somebot {
+    display: none; }
 
   .h {
     height: 55px;
@@ -486,10 +547,18 @@ aside, nav, article, figure {
     width: 55px;
     float: left; }
 
+  .h2 {
+    height: 55px;
+    width: 55px; }
+
+  .v2 {
+    height: 55px;
+    width: 55px; }
+
   .lillelogo {
-    display: block;
-    height: auto;
-    width: 50%; }
+    height: 40px;
+    width: auto;
+    display: block; }
 
   .logostreg {
     margin-top: 150px;
@@ -510,13 +579,13 @@ aside, nav, article, figure {
 
   .menu_web {
     display: block;
-    font-family: 'Nunito', sans-serif; }
+    font-family: "Nunito", sans-serif; }
 
   .dropdown {
     display: none; }
 
   a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-size: 15px; }
 
@@ -527,8 +596,213 @@ aside, nav, article, figure {
     flex-wrap: wrap;
     flex-direction: row;
     _margin-right: 30px;
+    _margin-top: 100px;
+    justify-content: space-between; }
+
+  .omosoverskrift {
+    text-align: center;
+    margin: 0% auto; }
+
+  .omosoverskrift2 {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; }
+
+  .mennesker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    height: auto;
+    width: 250%;
+    margin-right: -150px;
+    margin-left: 30px; }
+
+  .menneske1 {
+    height: auto;
+    display: block; }
+
+  .menneske2 {
+    height: auto;
+    display: block; }
+
+  .menneske3 {
+    height: auto;
+    display: block; }
+
+  .carlos, .michael, .anette {
+    width: 50%;
+    margin-left: 5%; }
+
+  .omcarlos, .ommichael, .omanette {
+    text-align: justify;
+    margin-left: 2%; }
+
+  .element2 {
+    _margin-left: 20%; }
+
+  .ommichael {
+    _padding-right: 2%; }
+
+  .billede1, .billede2, .billede3 {
+    margin: 2%; }
+
+  .forhandleroverskrift {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px; }
+
+  .forhandler {
+    margin-top: 350px; }
+
+  .forhandlertekst {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 5px; }
+
+  .gallerioverskrift {
+    width: 50%;
+    margin: 0 auto; }
+
+  .galleritekst {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: justify;
+    margin-bottom: 100px; }
+
+  .galleriknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto;
+    display: none; }
+
+  .omosknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto; }
+
+  .gallericontain2 {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px; }
+
+  .knap {
+    padding: 8px;
+    margin-top: 30px;
+    background-color: #952641; }
+
+  .kontaktinfo {
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex; }
+
+  .danmark {
+    float: left; }
+
+  .spanien {
+    float: right;
+    text-align: right; }
+
+  .kontaktcontain {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 300px; }
+
+  h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: white; }
+
+  h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white; }
+
+  p {
+    color: white;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif; }
+
+  .logopng {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; } }
+@media screen and (min-width: 992px) {
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px; }
+
+  .h {
+    height: 55px;
+    width: 55px;
+    float: right; }
+
+  .v {
+    height: 55px;
+    width: 55px;
+    float: left; }
+
+  .h2 {
+    height: 55px;
+    width: 55px; }
+
+  .v2 {
+    height: 55px;
+    width: 55px; }
+
+  .logostreg {
+    margin-top: 150px;
+    margin-left: 20px;
+    height: 65%;
+    width: 63%; }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    width: 98%;
+    z-index: 5000;
+    text-shadow: 2px 2px 4px #000000; }
+
+  .menu_web {
+    display: block;
+    font-family: "Nunito", sans-serif; }
+
+  .dropdown {
+    display: none; }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px; }
+
+  .content {
+    margin-top: 300px; }
+
+  .omos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
     margin-top: 100px;
     justify-content: space-between; }
+
+  .omosoverskrift {
+    text-align: center;
+    margin: 0% auto; }
+
+  .omosoverskrift2 {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center; }
 
   .mennesker {
     display: flex;
@@ -554,20 +828,16 @@ aside, nav, article, figure {
 
   .forhandleroverskrift {
     width: 50%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 10px; }
 
   .forhandler {
     margin-top: 350px; }
 
   .forhandlertekst {
-    width: 33%;
     margin: 0 auto;
     margin-top: 5px; }
 
-  .gallericontain {
-    margin-top: 400px;
-    height: 500px; }
-  
   .gallerioverskrift {
     width: 50%;
     margin: 0 auto; }
@@ -602,7 +872,6 @@ aside, nav, article, figure {
 
   .kontaktinfo {
     justify-content: space-between;
-
     margin-top: 100px;
     display: flex; }
 
@@ -613,9 +882,180 @@ aside, nav, article, figure {
     float: right;
     text-align: right; }
 
+  .kontaktcontain {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 300px; }
+
+  h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: #ffffff; }
+
+  h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #ffffff; }
+
+  p {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif; }
+
+  .logopng {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; } }
+@media screen and (min-width: 1200px) {
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px; }
+
+  .h {
+    height: 55px;
+    width: 55px;
+    float: right; }
+
+  .v {
+    height: 55px;
+    width: 55px;
+    float: left; }
+
+  .lillelogo {
+    width: auto;
+    display: block; }
+
+  .logostreg {
+    margin-top: 150px;
+    margin-left: 20px;
+    height: 65%;
+    width: 63%; }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    width: 98%;
+    z-index: 5000;
+    text-shadow: 2px 2px 4px #000000; }
+
+  .menu_web {
+    display: block;
+    font-family: "Nunito", sans-serif; }
+
+  .dropdown {
+    display: none; }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px; }
+
+  .content {
+    margin-top: 300px; }
+
+  .omos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: 100px;
+    justify-content: space-between; }
+
+  .omosoverskrift {
+    text-align: center;
+    margin: 0% auto; }
+
+  .omosoverskrift2 {
+    text-align: center;
+    width: 50%;
+    margin: 0% auto; }
+
+  .mennesker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    height: auto;
+    width: 250%;
+    margin-right: -150px;
+    margin-left: 30px; }
+
+  .menneske1 {
+    height: auto;
+    display: block; }
+
+  .menneske2 {
+    height: auto;
+    display: block; }
+
+  .menneske3 {
+    height: auto;
+    display: block; }
+
+  .forhandleroverskrift {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px; }
+
+  .forhandler {
+    margin-top: 350px; }
+
+  .forhandlertekst {
+    width: 33%;
+    margin: 0 auto;
+    margin-top: 5px; }
+
+  .gallerioverskrift {
+    width: 50%;
+    margin: 0 auto; }
+
+  .galleritekst {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: justify;
+    margin-bottom: 100px; }
+
+  .galleriknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto;
+    display: none; }
+
+  .omosknap {
+    background-color: #952641;
+    border: #952641;
+    margin: 0 auto; }
+
+  .gallericontain2 {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px; }
+
+  .knap {
+    padding: 8px;
+    margin-top: 30px;
+    background-color: #952641; }
+
+  .kontaktinfo {
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex; }
+
+  .danmark {
+    float: left; }
+
+  .spanien {
+    float: right;
+    text-align: right; }
 
   .kontaktcontain {
-    _width: 50%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 300px; }
 
@@ -626,21 +1066,16 @@ aside, nav, article, figure {
 
   h2 {
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     color: white; }
 
   p {
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif; }
 
   .logopng {
-    display: block; }
-
-  .some {
-    display: none; } }
     display: block;
-    height: 50%;
     width: 50%;
     margin-left: auto;
     margin-right: auto; } }

@@ -1,4 +1,4 @@
-// Alt der gælder for mobil og højere
+@charset "utf-8";// Alt der gælder for mobil og højere
 
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
@@ -7,6 +7,14 @@
 
 body {
   margin: 35px; // Ingen kanter i siden af browser
+  background-image: url("images/404.jpg");
+  background-size: cover;
+  background-position: inherit;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
 }
 
 .dropbtn {
@@ -15,6 +23,7 @@ body {
   cursor: pointer;
   background-color: #952641;
   color: white;
+  float: left;
 }
 
 .dropdown {
@@ -54,8 +63,7 @@ body {
 }
 
 .lillelogo{
-  display: block;
-  color: #45526b;
+ display: none;
 }
 .kontaktcontain{
   margin-top: 60px;
@@ -105,6 +113,38 @@ p{
 
 }
 
+.header {
+  display: flex;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  width: 98%;
+  z-index: 5000;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #262d3b;
+}
+
+
+a:hover{
+  color: white;
+  background-color: #952641;
+  text-decoration: none;
+}
+
+.some{
+  background-color: #952641;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0; // Ingen ydre margen fra overskrifter
   padding: 0; // Ingen indre margen fra overskrifter
@@ -134,16 +174,67 @@ img {
 
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
+  .lillelogo {
+    height: 40px;
+    width: auto;
+    display: block;
+  }
+
+  .logostreg{
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+  }
+
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .dropbtn {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .kontaktinfo{
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex;
+  }
+
+
+  .danmark{
+    float: left;
+
+  }
+
+  .spanien {
+    float: right;
+    text-align: right;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
   // Alt der ændres i tablet liggende fra mobil og tablet stående
-}
-
-@media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
-
   .lillelogo {
+    height: 40px;
+    width: auto;
     display: block;
   }
 
@@ -169,9 +260,80 @@ img {
   }
 
   a {
-    color: #45526b;
+    color: white;
     text-decoration: none;
     font-size: 15px;
+  }
+
+  .kontaktinfo{
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex;
+  }
+
+
+  .danmark{
+    float: left;
+
+  }
+
+  .spanien {
+    float: right;
+    text-align: right;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+
+  .lillelogo {
+    height: 40px;
+    width: auto;
+    display: block;
+  }
+
+  .logostreg{
+    margin-top: 100px;
+    margin-left: 20px;
+  }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+  }
+
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .kontaktinfo{
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex;
+  }
+
+
+  .danmark{
+    float: left;
+
+  }
+
+  .spanien {
+    float: right;
+    text-align: right;
   }
 
 }

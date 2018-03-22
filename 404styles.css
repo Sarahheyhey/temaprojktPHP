@@ -3,14 +3,22 @@
   box-sizing: border-box; }
 
 body {
-  margin: 35px; }
+  margin: 35px;
+  background-image: url("images/404.jpg");
+  background-size: cover;
+  background-position: inherit;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Nunito', sans-serif; }
 
 .dropbtn {
   font-size: 16px;
   border: none;
   cursor: pointer;
   background-color: #952641;
-  color: white; }
+  color: white;
+  float: left; }
 
 .dropdown {
   text-align: center;
@@ -43,8 +51,7 @@ body {
   display: none; }
 
 .lillelogo {
-  display: block;
-  color: #45526b; }
+  display: none; }
 
 .kontaktcontain {
   margin-top: 60px;
@@ -81,6 +88,32 @@ p {
   font-size: 10px;
   font-family: 'Nunito', sans-serif; }
 
+.header {
+  display: flex;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  right: 20px;
+  width: 98%;
+  z-index: 5000;
+  text-shadow: 2px 2px 4px #000000;
+  background-color: #262d3b; }
+
+a:hover {
+  color: white;
+  background-color: #952641;
+  text-decoration: none; }
+
+.some {
+  background-color: #952641;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: none;
+  font-family: 'Nunito', sans-serif; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
@@ -102,8 +135,50 @@ img {
   max-width: 100%;
   height: auto; }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .lillelogo {
+    height: 40px;
+    width: auto;
+    display: block; }
+
+  .logostreg {
+    margin-top: 100px;
+    margin-left: 20px; }
+
+  .header {
+    justify-content: space-between;
+    display: flex; }
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif; }
+
+  .dropbtn {
+    display: none; }
+
+  .dropdown {
+    display: none; }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px; }
+
+  .kontaktinfo {
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex; }
+
+  .danmark {
+    float: left; }
+
+  .spanien {
+    float: right;
+    text-align: right; } }
+@media screen and (min-width: 992px) {
+  .lillelogo {
+    height: 40px;
+    width: auto;
     display: block; }
 
   .logostreg {
@@ -122,8 +197,57 @@ img {
     display: none; }
 
   a {
-    color: #45526b;
+    color: white;
     text-decoration: none;
-    font-size: 15px; } }
+    font-size: 15px; }
+
+  .kontaktinfo {
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex; }
+
+  .danmark {
+    float: left; }
+
+  .spanien {
+    float: right;
+    text-align: right; } }
+@media screen and (min-width: 1200px) {
+  .lillelogo {
+    height: 40px;
+    width: auto;
+    display: block; }
+
+  .logostreg {
+    margin-top: 100px;
+    margin-left: 20px; }
+
+  .header {
+    justify-content: space-between;
+    display: flex; }
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif; }
+
+  .dropdown {
+    display: none; }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px; }
+
+  .kontaktinfo {
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex; }
+
+  .danmark {
+    float: left; }
+
+  .spanien {
+    float: right;
+    text-align: right; } }
 
 /*# sourceMappingURL=404styles.css.map */

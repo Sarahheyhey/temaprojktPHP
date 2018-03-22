@@ -1,22 +1,30 @@
-// Alt der gælder for mobil og højere
+@charset "utf-8"; // Alt der gælder for mobil og højere
 
 * { // Gælder alt på hele siden
   -webkit-box-sizing: border-box; // -webkit- browserunderstøttelse
   box-sizing: border-box; // Bokse har altid den størrelse man giver uanset om der tilføjes margen mv.
 }
 
-body {
-  margin: 35px; // Ingen kanter i siden af browser
+$red: #952641;
+$lightblue: #45526b;
+$darkblue: #262d3b;
+$white: #ffffff;
 
+body {
+  margin: 20px; // Ingen kanter i siden af browser
   background-image: url("../images/Artboard_vin.jpg");
   background-size: cover;
   background-position: inherit;
   background-attachment: scroll;
   background-repeat: no-repeat;
+  color: white;
+}
+
 
 a:hover{
-  color: white;
-  background-color: #952641;
+  color: $white;
+  background-color: $red;
+  text-decoration: none;
 }
 
 img{
@@ -25,7 +33,7 @@ img{
 .læsmeretekst{
   width: auto;
   height: auto;
-  
+
 }
 .allemennesker{
   margin-top: 130px;
@@ -57,12 +65,12 @@ img{
 
 
 .læsmere{
-  background-color: #952641;
-  border: #952641;
+  background-color: $red;
+  border: $red;
   margin-top: auto;
   width: auto;
   height: auto;
-  
+
 }
 
 .billede1{
@@ -70,16 +78,17 @@ img{
 }
 
 .omosknap{
-  background-color: #952641;
-  border: #952641;
+  background-color: $red;
+  border: $red;
   display: none;
 }
 .galleriknap{
-  background-color: #952641;
-  border: #952641;
+  background-color: $red;
+  border: $red;
   display: none;
 
 }
+
 .h{
   height: 40px;
   width: 40px;
@@ -92,12 +101,23 @@ img{
   float: left;
 }
 
+.h2 {
+  height:40px;
+  width: 40px;
+}
+
+.v2 {
+  height: 40px;
+  width: 40px;
+}
+
 .dropbtn {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  background-color: #952641;
-  color: white;
+  background-color: $red;
+  color: $white;
+  z-index: 200;
 }
 
 .dropdown {
@@ -105,27 +125,29 @@ img{
   width: 25%;
   position: relative;
   display: inline-block;
+  z-index:200;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #952641;
+  background-color: $red;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   z-index: 1;
+  font-family: 'Nunito', sans-serif;
 }
 
 .dropdown-content a {
-  color: white;
+  color: $white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .dropdown-content a:hover {
-  background: white;
-  color: #952641;
+  background: $white;
+  color: $red;
 }
 
 .dropdown:hover .dropdown-content {
@@ -137,7 +159,7 @@ img{
 }
 
 .lillelogo{
- display: none;
+  display: none;
 }
 
 .logostreg{
@@ -147,33 +169,35 @@ img{
   margin-top: 10px;
 }
 
-  .content{
-    height: auto;
-    width: 100%;
-    display: -webkit-flex;
-  }
+.content{
+  height: auto;
+  width: 100%;
+  display: -webkit-flex;
+}
 
 .omos{
   position: relative;
-  width: 100%;
+  width: 1000px;
+  height: auto;
   padding: 10px;
   justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 50px;
+  text-align: center;
 }
 
-  .omosoverskrift{
-    position: relative;
-    width: 95%;
-    color: white;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-    align-content: space-between;
-
-  }
+.omosoverskrift{
+  position: relative;
+  width: 100%;
+  color: $white;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  padding: 10px;
+  align-content: space-between;
+  height: auto;
+  margin: 0 auto;
+}
 
 
 .omostekst{
@@ -186,15 +210,6 @@ img{
   text-align: justify;
 }
 
-
-  .omostekst{
-    position: relative;
-    width: auto;
-    height: 50%;
-    font-family: 'Nunito', sans-serif;
-    font-size: 11px;
-    padding: 10px;
-  }
 
 .mennesker{
   display: none;
@@ -221,27 +236,50 @@ img{
   margin: 5px;
 }
 
+.carlos, .michael, .anette{
+  width: 70%;
+  margin-left: 5%;
+
+}
+
+.omcarlos, .ommichael, .omanette{
+  text-align: justify;
+  margin-left: 2%;
+}
+
+.element2{
+  _margin-left: 20%;
+  justify-content: space-between;
+}
+
+.ommichael{
+  _padding-right: 2%;
+}
+
+.billede1, .billede2, .billede3{
+  margin: 2%;
+  width: 20%;
+}
+
 .forhandler{
   height: auto;
   width: 100%;
   padding: 10px;
   text-align: center;
-  margin-top: 95px;
+  margin-top: 100px;
 
-  
+
 }
 
- .forhandleroverskrift{
-   position: relative;
-   width: auto;
-   color: white;
-   font-family: 'Libre Baskerville', serif;
-   font-size: 30px;
-   text-align: center;
-   padding: 10px;
+.forhandleroverskrift{
+  position: relative;
+  width: auto;
+  color: $white;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  margin-top: 80px;
 
- }
-
+}
 
 .forhandlertekst{
   position: relative;
@@ -249,17 +287,9 @@ img{
   height: 50%;
   font-family: 'Nunito', sans-serif;
   padding: 10px;
-  text-align: left;
   color: white;
   text-align: justify;
 }
-
-
-  $red: #952641;
-  $lightblue: #45526b;
-  $darkblue: #262d3b;
-  $white: #ffffff;
-
 
 .forhandlercontain{
   width: 100%;
@@ -268,9 +298,19 @@ img{
 }
 
 .knap{
-  background-color: #952641;
-  color: white;
-  border: #952641;
+  background-color: $red;
+  color: $white;
+  border: $red;
+}
+
+.kort {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1px 6px;
+  background-color: $red;
+  color: $white;
+  border: $red;
 }
 
 
@@ -279,13 +319,13 @@ img{
 }
 
 .kontaktcontain{
-  margin-top: 80px;
+  margin-top: 100px;
   text-align: center;
 }
 
 
 .kontaktinfo{
-margin-top: 50px;
+  margin-top: 50px;
   padding: 20px;
 }
 
@@ -302,17 +342,27 @@ margin-top: 50px;
   display: none;
 }
 
-
+.gallericontain2{
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+}
 
 .gallerioverskrift2{
   display: none;
+}
+
+.gallericontain2{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .galleritekst {
   margin: 0 auto;
   margin-top: 5px;
   text-align: justify;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding: 10px;
 }
 
@@ -323,38 +373,31 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
   font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
-  color: white;
-
-
+  font-size: 20px;
+  color: $white;
 }
 
 h2{
   font-family: 'Nunito', sans-serif;
-  font-size: 10px;
-  color: white;
-
+  font-size: 17px;
+  color: $white;
 }
 
 p{
-  color: white;
-  font-size: 10px;
+  color: $white;
+  font-size: 12px;
   font-family: 'Nunito', sans-serif;
-
 }
-
 
 .some{
   background-color: $red;
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  color: white;
+  color: $white;
   font-size: 20px;
   border: none;
-  display: none;
   font-family: 'Nunito', sans-serif;
-
 
 }
 
@@ -508,12 +551,12 @@ aside, nav, article, figure {
 }
 .nivo-prevNav {
   left:0px;
-  background-color: #952641;
+  background-color: $red;
   font-size: 20px;
 }
 .nivo-nextNav {
   right:0px;
-  background-color: #952641;
+  background-color: $red;
   font-size: 20px;
 }
 /* Control nav styles (e.g. 1,2,3...) */
@@ -534,7 +577,7 @@ aside, nav, article, figure {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #962842;
+  background: $red;
   width: 50px;
   height: 50px;
   display: block;
@@ -548,6 +591,7 @@ aside, nav, article, figure {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 7000;
 }
 #return-to-top i {
   color: #fff;
@@ -563,30 +607,36 @@ aside, nav, article, figure {
   transition: all 0.3s ease;
 }
 #return-to-top:hover {
-  background: #962842;
+  background: $red;
 }
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
 }
 
+
+.somebot{
+  background-color: $red;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  color: white;
+  font-size: 25px;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
   // Alt der ændres i tablet stående fra mobil
-
-
-}
-
-@media screen and (min-width: 992px) {
-  // Alt der ændres i tablet liggende fra mobil og tablet stående
-
-}
-
-@media screen and (min-width: 1200px) {
-  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
   body{
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 100px;
+  }
+
+  .somebot {
+    display: none;
   }
 
   .h{
@@ -601,12 +651,22 @@ aside, nav, article, figure {
     float: left;
   }
 
+  .h2 {
+    height: 55px;
+    width: 55px;
+  }
+
+  .v2 {
+    height: 55px;
+    width: 55px;
+  }
+
 
   .lillelogo {
-    display: block;
-    height: auto;
-    width: 50%;
-  }
+      height: 40px;
+      width: auto;
+      display: block;
+    }
 
   .logostreg{
     margin-top: 150px;
@@ -629,7 +689,7 @@ aside, nav, article, figure {
 
   .menu_web {
     display: block;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif
 
   }
 
@@ -638,10 +698,11 @@ aside, nav, article, figure {
   }
 
   a {
-    color: white;
+    color: $white;
     text-decoration: none;
     font-size: 15px;
   }
+
 
   .content{
     margin-top: 300px;
@@ -652,11 +713,24 @@ aside, nav, article, figure {
     flex-wrap: wrap;
     flex-direction: row;
     _margin-right: 30px;
-    margin-top: 100px;
+    _margin-top: 100px;
     justify-content: space-between;
-
-
   }
+
+  .omosoverskrift{
+    text-align: center;
+    margin: 0% auto;
+  }
+
+  .omosoverskrift2{
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap: wrap;
+  }
+
 
   .mennesker {
     display: flex;
@@ -682,23 +756,37 @@ aside, nav, article, figure {
 
   }
   .menneske3{
-       height: auto;
-  }
-
-
-  .menneske1 {
-    display: block;
-  }
-
-  .menneske2 {
     height: auto;
     display: block;
   }
 
+  .carlos, .michael, .anette{
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  .omcarlos, .ommichael, .omanette{
+    text-align: justify;
+    margin-left: 2%;
+  }
+
+  .element2{
+    _margin-left: 20%;
+
+  }
+
+.ommichael{
+  _padding-right: 2%;
+}
+
+  .billede1, .billede2, .billede3{
+    margin: 2%;
+  }
 
   .forhandleroverskrift{
-    width: 50%;
+    width: 400px;
     margin: 0 auto;
+    margin-top:10px;
   }
 
   .forhandler{
@@ -706,29 +794,31 @@ aside, nav, article, figure {
   }
 
   .forhandlertekst{
-    width: 33%;
+    width: 500px;
     margin:  0 auto;
     margin-top: 5px;
   }
 
-.gallerioverskrift{
-  width: 50%;
-  margin: 0 auto;
-}
 
-.galleritekst {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 5px;
-  text-align: justify;
-  margin-bottom: 100px;
-}
-.galleriknap{
-  background-color: $red;
-  border: $red;
-  margin:0 auto;
-  display: none;
-}
+  .gallerioverskrift{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .galleritekst {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: justify;
+    margin-bottom: 100px;
+  }
+
+  .galleriknap{
+    background-color: $red;
+    border: $red;
+    margin:0 auto;
+    display: none;
+  }
 
   .omosknap{
     background-color: $red;
@@ -737,6 +827,11 @@ aside, nav, article, figure {
   }
 
 
+  .gallericontain2{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 
   .knap{
     padding: 8px;
@@ -763,11 +858,11 @@ aside, nav, article, figure {
     text-align: right;
   }
 
-.kontaktcontain{
-  _width: 50%;
-  margin: 0 auto;
-  margin-top: 300px;
-}
+  .kontaktcontain{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 300px;
+  }
 
   h1{
     font-family: 'Libre Baskerville', serif;
@@ -779,21 +874,479 @@ aside, nav, article, figure {
 
   h2{
     font-family: 'Nunito', sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     color: white;
 
   }
 
   p{
     color: white;
-    font-size: 11px;
+    font-size: 15px;
     font-family: 'Nunito', sans-serif;
 
   }
 
   .logopng{
     display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+}
+
+@media screen and (min-width: 992px) {
+  // Alt der ændres i tablet liggende fra mobil og tablet stående
+  body{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+
+  .h{
+    height: 55px;
+    width: 55px;
+    float: right;
+  }
+
+  .v{
+    height: 55px;
+    width: 55px;
+    float: left;
+  }
+
+  .h2 {
+    height: 55px;
+    width: 55px;
+  }
+
+  .v2 {
+    height: 55px;
+    width: 55px;
+  }
+
+
+  .logostreg{
+    margin-top: 150px;
+    margin-left: 20px;
+    height: 65%;
+    width: 63%;
+  }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    width: 98%;
+    z-index: 5000;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif
+
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
+  .content{
+    margin-top: 300px;
+
+  }
+
+  .omos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: 100px;
+    justify-content: space-between;
+  }
+
+  .omosoverskrift{
+    text-align: center;
+    margin: 0% auto;
+  }
+
+  .omosoverskrift2{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .mennesker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    height: auto;
+    width: 250%;
+    margin-right: -150px;
+    margin-left: 30px;
+
+
+  }
+
+  .menneske1{
+    height: auto;
+    display: block;
+  }
+
+  .menneske2{
+    height: auto;
+    display: block;
+
+  }
+  .menneske3{
+    height: auto;
+    display: block;
+  }
+
+
+  .forhandleroverskrift{
+    width: 50%;
+    margin: 0 auto;
+    margin-top:10px;
+  }
+
+  .forhandler{
+    margin-top: 350px;
+  }
+
+  .forhandlertekst{
+    margin:  0 auto;
+    margin-top: 5px;
+  }
+
+
+  .gallerioverskrift{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .galleritekst {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: justify;
+    margin-bottom: 100px;
+  }
+  .galleriknap{
+    background-color: $red;
+    border: $red;
+    margin:0 auto;
+    display: none;
+  }
+
+  .omosknap{
+    background-color: $red;
+    border: $red;
+    margin: 0 auto;
+  }
+
+
+  .gallericontain2{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .knap{
+    padding: 8px;
+    margin-top: 30px;
+    background-color: $red;
+
+  }
+
+
+  .kontaktinfo{
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex;
+  }
+
+
+  .danmark{
+    float: left;
+
+  }
+
+  .spanien {
+    float: right;
+    text-align: right;
+  }
+
+  .kontaktcontain{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 300px;
+  }
+
+  h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: $white;
+
+
+  }
+
+  h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: $white;
+
+  }
+
+  p{
+    color: $white;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .logopng{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  // Alt der ændres i computer fra mobil, tablet stående og tablet liggende
+  body{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+
+  .h{
+    height: 55px;
+    width: 55px;
+    float: right;
+  }
+
+  .v{
+    height: 55px;
+    width: 55px;
+    float: left;
+  }
+
+  .lillelogo {
+    width: auto;
+    display: block;
+  }
+
+  .logostreg{
+    margin-top: 150px;
+    margin-left: 20px;
+    height: 65%;
+    width: 63%;
+  }
+
+  .header {
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    width: 98%;
+    z-index: 5000;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .menu_web {
+    display: block;
+    font-family: 'Nunito', sans-serif
+
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
+  .content{
+    margin-top: 300px;
+
+  }
+
+  .omos {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: 100px;
+    justify-content: space-between;
+  }
+
+  .omosoverskrift{
+    text-align: center;
+    margin: 0% auto;
+  }
+
+  .omosoverskrift2{
+    text-align: center;
+    width: 50%;
+    margin: 0% auto;
+  }
+
+  .mennesker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    height: auto;
+    width: 250%;
+    margin-right: -150px;
+    margin-left: 30px;
+
+
+  }
+
+  .menneske1{
+    height: auto;
+    display: block;
+  }
+
+  .menneske2{
+    height: auto;
+    display: block;
+
+  }
+  .menneske3{
+    height: auto;
+    display: block;
+  }
+
+
+  .forhandleroverskrift{
+    width: 50%;
+    margin: 0 auto;
+    margin-top:10px;
+  }
+
+  .forhandler{
+    margin-top: 350px;
+  }
+
+  .forhandlertekst{
+    width: 33%;
+    margin:  0 auto;
+    margin-top: 5px;
+  }
+
+
+  .gallerioverskrift{
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .galleritekst {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: justify;
+    margin-bottom: 100px;
+  }
+  .galleriknap{
+    background-color: $red;
+    border: $red;
+    margin:0 auto;
+    display: none;
+  }
+
+  .omosknap{
+    background-color: $red;
+    border: $red;
+    margin: 0 auto;
+  }
+
+
+  .gallericontain2{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .knap{
+    padding: 8px;
+    margin-top: 30px;
+    background-color: $red;
+
+  }
+
+
+  .kontaktinfo{
+    justify-content: space-between;
+    margin-top: 100px;
+    display: flex;
+  }
+
+
+  .danmark{
+    float: left;
+
+  }
+
+  .spanien {
+    float: right;
+    text-align: right;
+  }
+
+  .kontaktcontain{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 300px;
+  }
+
+  h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: white;
+
+
+  }
+
+  h2{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+
+  }
+
+  p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+
+  }
+
+  .logopng{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
